@@ -1,0 +1,20 @@
+
+-> There are 53 reserved words in java
+-> 50 are keyword and 3 literal values
+-> 48 are in use and 2 are not in use if we use them then compiler give left and right 
+-> 3 literals are true, false and null -> two of them are boolean value and one object reference initial value
+
+NOTE - > every keywords are in lowercase.
+
+
+Data types (8)           - > byte, short, int, long, float, double, char, boolean.
+flow control(11)         - > if, else, switch, case, default, break, for, do, while, continue, return.
+Access modifiers(11)     - > public, private, protected, static, final, abstract, synchronized, native, strictfp(1.2v), transient, volatile.
+Exception handling(6)    - > try, catch,finally, throw, throws, assert(1.4v).
+class reated(6)          - > class, interface, extends, implements, package, import
+Object related(4)        - > new, instanceof, this, super
+return type(1)           - > void (In java return type is mandatory if method not return any thing then it is void return type) but in c return type is optional and default return type is int.
+unused keywords(2)       - > goto, const  (goto created several problem in old languages, hence some people baned this keyword in java, use final instade of const).
+reserved literals(3)     - > true, false, null(default value for object reference).
+enum (1) (1.5v)          - > use enum to define a group of named constants.
+
