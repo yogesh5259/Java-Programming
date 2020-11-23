@@ -6,6 +6,6 @@ $
 -
 
 
-As a identifier single _ is not allowded and can not start with number
-identifier can be a predefined class name or interfce name 
-length of identifier -> no limit 
+1. As a identifier single _ is not allowded and can not start with number
+2. identifier can be a predefined class name or interfce name 
+3. length of identifier -> no limit 
