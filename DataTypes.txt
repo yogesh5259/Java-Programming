@@ -11,3 +11,9 @@ float       4byte                            -3.4e38 to 3.4e38                  
 double      8byte                            -1.7e308 to 1.7e308                    Double              0.0
 char        2byte (Unicode based)            0 to 65535                             Character           0(space)
 boolean     NA(depend on VM)                 NA(possible value true or false)       Boolean             false
+
+
+byte data type is more suitable while working with streams over a network or from a file.
+short is used in early days for 16 bit processor.
+long is sutiable for large values like getting a number of character in file. file.length() method return long.
+char is 2 byte because java is based on unicode while c and c++ are ASCII code based. 
