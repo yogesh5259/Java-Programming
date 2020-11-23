@@ -1,0 +1,11 @@
+from 
+a to z
+A to Z 
+0 to 9
+$
+-
+
+
+As a identifier single _ is not allowded and can not start with number
+identifier can be a predefined class name or interfce name 
+length of identifier -> no limit 
