@@ -4,7 +4,7 @@ public class array {
 
         //Array declaration
         //single dimension array
-        int[] a;
+        int[] a = new int[3];
         int []b;
         int c[];
 
@@ -18,6 +18,10 @@ public class array {
 
         //invalid 
         //int[] []j,[]k; this rule applicable for only first declaration.
+        // We can not specify array size in array declaration.
+        // Every array have related class. at language level which we dont have access.
+
+        System.out.println(a.getClass().getName()); //[I
 
     }
 }
