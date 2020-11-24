@@ -16,5 +16,8 @@ public class array {
         int[][] h;
         int i[][];
 
+        //invalid 
+        //int[] []j,[]k; this rule applicable for only first declaration.
+
     }
 }
