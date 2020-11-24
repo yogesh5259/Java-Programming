@@ -1,0 +1,10 @@
+8 escape character in java
+
+1. \n new line
+2. \t horizontal tab
+3. \r return
+4. \b back space
+5. \f form feed
+6. \' 
+7. \"
+8. \\

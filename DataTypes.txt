@@ -5,7 +5,7 @@ datatype    size                             range                              
 
 byte        1byte                            -128 to 127                            Byte                0
 short       2byte                            -32768 to 32768                        Short               0
-int         4byte                            -2148473648 to -2148473647             Integer             0
+int         4byte                            -2148473648 to -2147483647             Integer             0
 long        8byte                            -2^63 to 2^63 - 1                      Long                0
 float       4byte                            -3.4e38 to 3.4e38                      Float               0.0
 double      8byte                            -1.7e308 to 1.7e308                    Double              0.0
