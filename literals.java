@@ -19,6 +19,7 @@ public class literals {
         double d4 = 0b101010;
         double d5 = 1.7e34; // exponential form is valid 
         double d6 = 123.345d;
+        
         System.out.println(d + "..." + d1 + "..." + d2 + "..." + d3 + "..." + d4 + "..." + d5 + "..." + d6);
         
 
