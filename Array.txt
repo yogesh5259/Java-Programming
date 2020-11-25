@@ -73,3 +73,21 @@ Anonymous array.
 
     -> Anonymous array is passed as an argument of method
  
+
+ length variable and length() method
+
+    1. length variable.
+
+    int[] a = new int[10];
+    sout(a.length) - > 10    // length is final variable.
+    sout(a.length()) - > compile time error.(can not find symbol)
+    -> All type of array have final variable called length. 
+
+    2. length() method
+
+    String s = new String("Yogesh");
+    sout(s.length()); -> 6 // length method is final method by default.
+    sout(s.length); -> compile time error.
+    -> String class is final so all the methods inside it is bydefault final.
+
+    
