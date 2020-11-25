@@ -1,0 +1,64 @@
+            Arrays
+
+-> Arrays are fixed in length and store homoginous element only.
+
+1. Single dimension Arrays
+
+    -> Declaration of Arrays
+    1. int[] a; //Can not provide size at declaration
+    2. int a[];
+    3. int []a;
+
+    ->  Creation of Arrays
+    1. int[] a = new int[4];  //size is mendetory
+    -> max size of array is max value of integer.
+    -> we can only able to provide int value at size.
+    -> max is 2147483647.
+    -> every array type has their corresponding class at language level. 
+
+
+    -> Initialization of array element
+    1. int[] a = new int[3];
+    a[0] = 10;
+    a[1] = 20;
+    a[2] = 30;
+
+
+2. Multidimension Arrays
+
+-> Array of Arrays concept followed by sun people.
+   https://www.google.com/url?sa=i&url=http%3A%2F%2Fmath.hws.edu%2Fjavanotes%2Fc7%2Fs5.html&psig=AOvVaw1tSNu-MzN9b8QQ-1nCOtq_&ust=1606373447634000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIC0hMqNne0CFQAAAAAdAAAAABAD
+    
+    -> Declaration of Arrays          
+        1. int[]  []d;
+        2. int[] e[];
+        3. int [][]f;
+        4. int []g[];
+        5. int[][] h;
+        6. int i[][];
+
+
+    -> Creation of array 
+        -> int[][] a = new int[base_size][] // we need to provide base size.
+        
+
+    -> Initialization of element
+        -> int[][] a = new int[3][2];
+        -> a[0][0] = 1;
+
+        OR
+
+        int[][] a = new int[3][]; // 100% valid
+        a[0] = new int[4];
+        a[1] = new int[5];
+
+
+Single line declaration, Creation and Initialization.
+
+    int[] array = new int[]{10,20,30}; //no need to specify size. otherwise compile tile error.
+    int[] array = {10,20,30};
+
+
+    -> Invalid Creation of array
+    1. int[] a;
+       a = {10,20,30};
