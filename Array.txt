@@ -53,7 +53,7 @@
         a[1] = new int[5];
 
 
-Single line declaration, Creation and Initialization.
+3. Single line declaration, Creation and Initialization.
 
     int[] array = new int[]{10,20,30}; //no need to specify size. otherwise compile tile error.
     int[] array = {10,20,30};
@@ -65,7 +65,7 @@ Single line declaration, Creation and Initialization.
 
 
 
-Anonymous array.
+4. Anonymous array.
     -> if we want array without name is called Anonymous array.
     -> The main purpose of anonymous array is just for instant use (just for one time usage).
 
@@ -74,7 +74,7 @@ Anonymous array.
     -> Anonymous array is passed as an argument of method
  
 
- length variable and length() method
+5. length variable and length() method
 
     1. length variable.
 
@@ -90,4 +90,3 @@ Anonymous array.
     sout(s.length); -> compile time error.
     -> String class is final so all the methods inside it is bydefault final.
 
-    
