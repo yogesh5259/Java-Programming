@@ -62,3 +62,14 @@ Single line declaration, Creation and Initialization.
     -> Invalid Creation of array
     1. int[] a;
        a = {10,20,30};
+
+
+
+Anonymous array.
+    -> if we want array without name is called Anonymous array.
+    -> The main purpose of anonymous array is just for instant use (just for one time usage).
+
+    new int[]{10,20,30}; // not specify size.
+
+    -> Anonymous array is passed as an argument of method
+ 
