@@ -97,4 +97,41 @@
     sout(s.length); -> compile time error.
     -> String class is final so all the methods inside it is bydefault final.
 
-6.Array variable Initialization
+6. Array element Assignment
+
+    byte -> short -> int -> long -> float -> double
+    char -> int
+
+    int[] a = new int[3];
+    a[0] = 'a';  //100% valid 
+    a[1] = 10.20; // Compile time error posible loss of pricision.
+
+    we an not assign short to char or vice versa. because short is signed data type.
+
+7. Array variable Assignment 
+
+    case 1.
+    int[] a = new int[]{10,20,30,40};
+    int[] b = new int[]{10,20};
+
+    a = b; OR b = a;  //100% valid because it does not swap element but only references.
+
+    case 2.
+    int[] a = new int[]{10,20,30,40};
+    char[] c = new char[]{'a','b','c'};
+
+    a = c; // Invalid assignment we get compile time error.
+    
+    case 3.
+    String[] s = new String["a","aa","aaa"];
+    Object[] o = s; // 100% valid
+    // In object type array we can assign chid array to parent variable.
+
+    int -> float        //valid
+    int[] -> float[]    //Invalid
+    char -> int         //valid
+    float -> int        //Invalid
+    char[] -> int[]         //Invalid
+    String -> object        //valid
+    String[] -> object[]    //valid
+ 

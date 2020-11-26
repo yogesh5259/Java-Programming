@@ -24,5 +24,12 @@ public class array {
 
         System.out.println(a.getClass().getName()); //[I
 
+        int[] array = new int[3];
+        array[0] = 'a';
+        //array[1] = 10.10; //Possible lossy conversion from double to int
+        System.out.println(array[0]);
+
+        String s = "abc";
+        Object o = s;
     }
 }
