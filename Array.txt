@@ -52,6 +52,13 @@
         a[0] = new int[4];
         a[1] = new int[5];
 
+        OR
+
+        int[][] a = new int[3][]; // 100% valid
+        a[0] = new int[4];
+        a[0][0]  // 0
+        a[1]     // null
+        a[1][0]  // NullPointerException if we perform any operation on null value.
 
 3. Single line declaration, Creation and Initialization.
 
@@ -90,3 +97,4 @@
     sout(s.length); -> compile time error.
     -> String class is final so all the methods inside it is bydefault final.
 
+6.Array variable Initialization
