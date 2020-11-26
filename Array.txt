@@ -135,3 +135,21 @@
     String -> object        //valid
     String[] -> object[]    //valid
  
+    int[][] a = new int[3][];
+    a[0] = new int[4][3]; // compile time error incompatable type  because in place of one dimension we are providing two dimension.
+    a[0] = 10; // compile time error incompatable type  
+
+    a[0] = new int[2]; //valid
+
+
+    // below are valid code
+    int[][] z = new int[4][5];
+    z[0] = new int[3];
+    z[1] = new int[4];
+    z = new int[1][2];
+    
+    Note:- when we assigning one array to another array then dimension and type must be matched.
+
+
+
+8. 

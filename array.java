@@ -31,5 +31,13 @@ public class array {
 
         String s = "abc";
         Object o = s;
+
+        int[][] z = new int[3][];
+        //z[0] = 10; 
+        z[0] = new int[3];
+
+
+        
+
     }
 }
