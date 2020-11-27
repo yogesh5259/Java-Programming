@@ -1,0 +1,27 @@
+        Java Variables.
+
+
+1. Division one
+    -> Two types of variable based on the data represented by variable. 
+        -> Primitive variables. int a = 10;
+        -> reference variables. String s = new String("yp");
+
+2. Division Two
+    -> Three types of variable based on the declaration. 
+        -> Instace variable.
+        -> Static variable.
+        -> local variable.
+
+
+    1. Instance variable.
+        -> variable declared directly inside a class outside the method, block and constructor are called instance variable.
+        -> It can be Primitive or reference type.
+        -> Separate copy will be created for each object.
+        -> Scope of instance variable is same as a Scope of object.
+        -> JVM will provide default value for instance variable.
+        -> Instance variable is created at the time of object creation.
+        -> Instance variable stored in a heap memory as a part of object.
+
+
+    2. Static variable.
+        ->

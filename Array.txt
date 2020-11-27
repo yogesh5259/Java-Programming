@@ -149,3 +149,4 @@
     z = new int[1][2];
     
     Note:- when we assigning one array to another array then dimension and type must be matched.
+    
