@@ -8,7 +8,7 @@
 
 2. Division Two
     -> Three types of variable based on the declaration. 
-        -> Instace variable.
+        -> Instance variable.
         -> Static variable.
         -> local variable.
 
@@ -21,7 +21,39 @@
         -> JVM will provide default value for instance variable.
         -> Instance variable is created at the time of object creation.
         -> Instance variable stored in a heap memory as a part of object.
+        -> Instance variable are called as a object level Variables and attributes.
+        -> We are not able access instance variable directly from the static context. we can make use of object to access instance variable in static context.
+        -> we can access instance variable directly from the non-static context.
+        
+        public class Test{
+            int x;
+            double y;
+            String z;
+            public static void main(String[] args){
+                System.out.println(x); //We get compile time error. because we are using instance variable inside static context.
+                Test t = new Test();
+                System.out.println(t.x); //0
+                System.out.println(t.y); //0.0
+                System.out.println(t.z); //null
+            }
+
+            //non static context.
+            public void m1(){
+                System.out.println(x); //0
+                System.out.println(y); //0.0
+                System.out.println(z); //null
+            }
+        }
 
 
     2. Static variable.
-        ->
+        -> variable with static keyword and declared directly inside a class outside the method, block and constructor are called static variable.
+        -> It can be Primitive or reference type.
+        -> one copy will be created and shared amog the all object.
+        ->  Scope of static variable is same as a Scope of class.
+        -> JVM will provide default value for static variable.
+        -> static variable is created at the time of class loading.
+        -> static variable stored in method memory.
+        -> static variable are called as a class level Variables and fields.
+        -> we can access static variable using class name as well as using object from the static and non static context.
+        -> Inside the same class directly we can access static variable.

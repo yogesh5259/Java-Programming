@@ -1,5 +1,6 @@
 public class array {
     public static void main(String[] args) {
+        
         //Array  
         //fixed in size and homoginous 
 
