@@ -123,3 +123,10 @@ NOTE: ALL POSSIBLE COMBINATION OF VARIABLE IS
         Local
 
 
+NOTE: THREAD SAFETY
+
+    Instance variable   -> NOT SAFE
+
+    Static Variable     -> NOT SAFE
+
+    Local variable      ->  SAFE
