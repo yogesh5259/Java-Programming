@@ -49,8 +49,8 @@
     2. Static variable.
         -> variable with static keyword and declared directly inside a class outside the method, block and constructor are called static variable.
         -> It can be Primitive or reference type.
-        -> one copy will be created and shared amog the all object.
-        ->  Scope of static variable is same as a Scope of class.
+        -> one copy will be created and shared among the all object.
+        -> Scope of static variable is same as a Scope of class.
         -> JVM will provide default value for static variable.
         -> static variable is created at the time of class loading.
         -> static variable stored in method memory.
@@ -76,4 +76,50 @@
             }
         }
     
-    3. 
+    3. Local Variable.
+        -> Variable declared inside any method, block or constructor to meet programmer requirement is called local variable.
+        -> It can be Primitive or reference type.
+        -> scope of local variable is inside block in which it is declared.
+        -> JVM not provide any default value for local variable we need to initialize variable before use other wise we get compile time error.
+        -> local variable created at the time of block execution.
+        -> for local variable applicable access modifier is "final" only. we provide any other then we will get compile time error.
+        -> local variable stored inside stack memory.
+        -> for every execution Separate copy will be created for local variable.
+        -> local variables are called as a temporary variable, stack variable.
+        -> it is recomended to provide default value for local variable.
+
+        public class Test{
+
+            public static void main(String[] args){
+                int x = 10;
+                System.out.println(x); //10
+                int y;
+                System.out.println(y); // compile time error.
+                int z;
+                z = 20;
+                System.out.println(z); //20
+            }
+        }
+
+        public class Test{
+
+            public static void main(String[] args){
+                int x;
+                if(args.length > 0){
+                    x = 10;
+                }
+                System.out.println(x); // Compile time error
+            }
+        }
+
+
+
+NOTE: ALL POSSIBLE COMBINATION OF VARIABLE IS 
+
+        Instance     
+                    Primitive
+        Static                          TOTAL 6 COMBINATIONS ARE THERE.
+                    Reference
+        Local
+
+
