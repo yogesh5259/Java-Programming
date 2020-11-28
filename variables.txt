@@ -57,3 +57,23 @@
         -> static variable are called as a class level Variables and fields.
         -> we can access static variable using class name as well as using object from the static and non static context.
         -> Inside the same class directly we can access static variable.
+
+        public class Test{
+            static int x;
+            static double y;
+            public static void main(String[] args){
+                System.out.println(x); //0
+                System.out.println(y); //0.0
+                x = 10; //valid
+                System.out.println(x); //10
+
+                Test t1 = new Test();
+                t1.x = 20;
+                Test t2 = new Test();
+                System.out.println(t2.x); // 20
+                System.out.println(x); // 20
+                System.out.println(Test.x); //20
+            }
+        }
+    
+    3. 
