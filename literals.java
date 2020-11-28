@@ -37,7 +37,7 @@ public class literals {
         char c1 = 97; // integer value in any valid int form. decimal,hexadecimal,octal,binary.
         char c2 = '\u0061'; // unicode representation of character.
         char c3 = '\n'; // any escape character.
-
+        //char c4 = 'ab'; // Compile time error
 
         // 2 values are possible
         boolean b = true;
