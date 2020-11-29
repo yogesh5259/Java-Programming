@@ -26,3 +26,12 @@
     }
 
     so we can call this method by using any number of argument including 0.
+
+    public class Test{
+        public static void main(String[] arg){
+            sum();
+            sum(10);
+            sum(10,20);
+            sum(10,20,30);
+        }
+    }
