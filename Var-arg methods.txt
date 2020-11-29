@@ -1,0 +1,28 @@
+    Var-arg(Variable number of arguments) method in java.
+
+1. In java for some method we need to create seperate method for Variable argument.
+    
+    public int sum(int a){
+        return a;
+    }
+
+    public int sum(int a, int b){
+        return a+b;
+    }
+
+    public int sum(int a, int b, int c){
+        return a+b+c;
+    }
+
+
+2. sun people create concept of Var-arg method.
+
+    public int sum(int... a){
+        int sum = 0;
+        for(int i = 0; i < a.length; i++){
+            sum += a[i];
+        }
+        return sum;
+    }
+
+    so we can call this method by using any number of argument including 0.
