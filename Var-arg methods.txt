@@ -25,7 +25,7 @@
         return sum;
     }
 
-    so we can call this method by using any number of argument including 0.
+    So we can call this method by using any number of argument including 0.
 
     public class Test{
         public static void main(String[] arg){
@@ -34,4 +34,18 @@
             sum(10,20);
             sum(10,20,30);
         }
+    }
+
+3. Valid declarations of var-arg method
+
+    public void sum(int... a){
+        
+    }
+
+    public void sum(int ...a){
+        
+    }
+
+    public void sum(int ... a){
+        
     }
