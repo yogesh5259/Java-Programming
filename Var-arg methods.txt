@@ -1,3 +1,4 @@
+    
     Var-arg(Variable number of arguments) method in java.
 
 1. In java for some method we need to create seperate method for Variable argument.
@@ -39,6 +40,11 @@
     }
 
 3. Valid declarations of var-arg method
+
+    //Method Signature is important in below code 
+
+    What is method signature?
+    -> method name followed by the argument type.  Example:- sum(int).
 
     public void sum(int... a){
         
