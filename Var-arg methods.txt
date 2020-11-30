@@ -49,3 +49,25 @@
     public void sum(int ... a){
         
     }
+
+    public void sum(int[] ... a){  // careate array of arrays include 0 array. Total became two dimension array.
+        
+    }
+    public void sum(int ... a[]){
+        
+    }
+    public void sum(int[][] ... a){
+        
+    }
+
+    public void sum(String ... a){
+        
+    }
+    public void sum(String[] ... a){
+        
+    }
+
+
+4. Behind the scene of var-arg
+
+    
