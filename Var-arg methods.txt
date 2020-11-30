@@ -17,6 +17,8 @@
 
 2. sun people create concept of Var-arg method.
 
+    -> All the arguments are differentiated using index value.
+
     public int sum(int... a){
         int sum = 0;
         for(int i = 0; i < a.length; i++){
@@ -50,6 +52,10 @@
         
     }
 
+    public void sum(int...a){  //No space between them is acceptable.
+        
+    }
+
     public void sum(int[] ... a){  // careate array of arrays include 0 array. Total became two dimension array.
         
     }
@@ -70,4 +76,33 @@
 
 4. Behind the scene of var-arg
 
+    -> JVM will create one dimension array for passed arguments.
+
+    -> There for we can not declare both var-arg method and one dimension array in same class.
     
+    // Below code give us compile time error: cannot declare both m1(int...) and m1(int[]) in class name.
+    public class Test{
+        public static void main(String[] args){
+
+        }
+
+        public static void m1(int[] a){
+
+        }
+
+        public static void m1(int... x){
+
+        }
+    }
+
+
+5. We can happyly replace all one dimension array parameter method with var-arg method.
+    -> We can replace main method String[] args with String... args.
+
+    int[] method                    int... method
+
+    m1(new int[]{10})               we can call to var-arg also using same syntex.
+    m1(new int[]{10,20})            we can call to var-arg also using same syntex.
+    m1(new int[]{10,20,30})         we can call to var-arg also using same syntex.
+    
+    -> But we can not able to do vise versa. we can not able to replace "int... with int[]"
