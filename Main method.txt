@@ -1,0 +1,40 @@
+
+    Java main method in detail.
+
+    public static void main(String[] args)
+
+ -> main method protype is checked by JVM at run time. compiler won't check for main method in class whether it is present or not. 
+
+1. Why method name is main? can we change it?
+    -> main method called by JVM. 
+    -> JVM always look for the below prototype.
+
+    public static void main(String[] args)
+
+    -> In JVM program the protype is set as above.
+    -> If we want to change main method name then we have to change JVM configuration.
+
+
+2. Why main method is public?
+
+    -> Because JVM can access form anywhere. not based on it's location.
+
+3. why main method is static?
+
+    -> Because JVM can call main method without existing object of class.
+
+4. Why main method return type is void?
+
+    -> Because JVM call the main method and if we return any thing to JVM then we don't have access to that.
+    -> So it is strictly void type.
+
+5.  What is String[] args?
+
+    -> it is command line argument which is strictly String array and args is the name of array.
+    -> we can change args to any name we like to have.
+
+
+
+-> main method Syntax is very strict.
+-> we can change some Syntax of main method like "Access Modifiers".
+-> public static void main(String[] args) to static public void main(String[] args)
