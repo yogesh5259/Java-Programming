@@ -31,10 +31,71 @@
 5.  What is String[] args?
 
     -> it is command line argument which is strictly String array and args is the name of array.
-    -> we can change args to any name we like to have.
+    -> we can change args to any valid variable name we like to have.
 
 
 
 -> main method Syntax is very strict.
 -> we can change some Syntax of main method like "Access Modifiers".
--> public static void main(String[] args) to static public void main(String[] args)
+-> public static void main(String[] args) to static public void main(String[] args).
+
+6. Can we apply extra modifiers like final, synchronized, strictfp?
+
+    -> Yes, we can apply final, synchronized, strictfp.
+
+    //This is valid main method. 
+    public static final synchronized strictfp void main(String[] args){
+
+    }
+
+
+7. valid main method Syntax.
+
+    // Any valid array type is valid for main method.
+    public static void main(String[] args){
+
+    }
+
+    public static void main(String args[]){
+            
+    }
+    public static void main(String []args){
+        
+    }
+
+    // Any order of access modifiers is  valid.
+    static public void main(String[] args){
+        
+    }
+
+    // Instade of one dimension array we can use var-arg.
+    public static void main(String... args){
+        
+    }
+
+    //Instade of args we can take any valid variable name.
+
+    public static void main(String[] yomain){
+
+    }
+
+
+8. Three cases regarding main method.
+
+    Case 1. main method can be overloaded.
+
+        -> Method overloading is possible for main method but compiler always look for the String[] method only.
+        -> Other overloaded main method we need to call explicitly.
+
+        public class Test{
+            public static void main(String[] args){
+
+            }
+
+            public static void main(int[] a){
+
+            }
+        }
+
+    
+    Case 2.  
