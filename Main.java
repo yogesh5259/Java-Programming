@@ -1,13 +1,15 @@
 public class Main {
 
         //valid 
-    // public static void main(String[] args) {
-    //     System.out.println("main method...");
-    // }
-        // Valid
-    public static final synchronized strictfp void main(String[] args){
-        System.out.println("main method...");
+    public static void main(String[] args) {
+        System.out.println("Parent main method...");
     }
+
+
+        // Valid
+    // public static final synchronized strictfp void main(String[] args){
+    //     System.out.println(" parent main method...");
+    // }
 
         //Valid
     // static      public     void     main(String[] args) {
@@ -19,4 +21,12 @@ public class Main {
     // public static void ypmain(String[] args) {
     //     System.out.println("main method...");
     // }
+}
+
+
+class b extends Main{
+    public static void main(String[] args) {
+        System.out.println("child main method...");
+    }
+
 }

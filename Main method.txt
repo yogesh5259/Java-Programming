@@ -98,4 +98,78 @@
         }
 
     
-    Case 2.  
+    Case 2. main method can be inherite.
+
+        -> File name is Test.java
+
+        public class Test{
+            public static void main(String[] args){
+                System.out.println("Prent main...");
+            }
+        }
+
+        class b extends Test{
+
+        }
+
+        // Run program using Main class.
+        -> Javac Test.Java
+        -> java Test
+        o/p :- Parent main... 
+
+        // Run program using b class.
+        -> Javac Test.Java
+        -> java b
+        o/p :- Parent main... 
+
+
+    Case 3. main Method Hiding 
+
+        -> It looks like method overriding but actualy it is method hiding.
+        -> File name is Test.java
+
+        public class Test{
+            public static void main(String[] args){
+                System.out.println("Prent main...");
+            }
+        }
+
+        class b extends Test{
+            public static void main(String[] args){
+                System.out.println("Child main...");
+            }
+        }
+
+
+9. New improvement in 1.7version of java
+
+    Case 1. Error message in detail regarding main method.
+
+        public class Test{
+            public static int main(String[] args){
+
+            }
+        }
+        -> IN 1.6 if class not contain proper main method then we get noSuchMethodError.
+        -> IN 1.7 on wards if class not contain proper main method then we get:- Main method not found in class Main, please define the main method as:public static void main(String[] args).
+
+    Case 2. Static block in class but not main method then.
+
+        public class Test{
+
+            static{
+                System.out.println("Static block...")
+            }
+            public static int main(String[] args){
+
+            }
+        }
+        
+        -> IN 1.6 Output is.
+                -> Static block...
+                -> Error: noSuchMethodError.
+
+        -> IN 1.7 Output is.
+                -> Main method not found in class Main, please define the main method as:public static void main(String[] args).
+    
+    Case 3. 
