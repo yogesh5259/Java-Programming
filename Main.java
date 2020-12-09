@@ -1,9 +1,14 @@
 public class Main {
 
-        //valid 
-    public static void main(String[] args) {
-        System.out.println("Parent main method...");
+    static{
+        System.out.println("inside static block");
+        System.exit(0);
     }
+
+        //valid 
+    // public static void main(String[] args) {
+    //     System.out.println("Parent main method...");
+    // }
 
 
         // Valid
@@ -21,12 +26,4 @@ public class Main {
     // public static void ypmain(String[] args) {
     //     System.out.println("main method...");
     // }
-}
-
-
-class b extends Main{
-    public static void main(String[] args) {
-        System.out.println("child main method...");
-    }
-
 }

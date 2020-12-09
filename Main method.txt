@@ -141,7 +141,7 @@
         }
 
 
-9. New improvement in 1.7version of java
+9. New improvement in 1.7 version of java
 
     Case 1. Error message in detail regarding main method.
 
@@ -172,4 +172,42 @@
         -> IN 1.7 Output is.
                 -> Main method not found in class Main, please define the main method as:public static void main(String[] args).
     
-    Case 3. 
+    Case 3. exit in Static block.
+
+        public class Test{
+            static{
+                System.out.println("inside satic block");
+                System.exit(0);
+            }
+            public static void main(String[] args){
+                System.out.println("inside main method");
+            }
+
+        }
+
+        output:-
+            -> 1.6 version
+                inside static block
+            -> 1.7 version
+                inside static block
+
+
+        public class Test{
+            static{
+                System.out.println("inside satic block");
+                System.exit(0);
+            }
+            public static int main(String[] args){
+                System.out.println("inside main method");
+                return 0;
+            }
+
+        }
+
+        output:-
+            -> 1.6 version
+                inside static block
+            -> 1.7 version
+                inside static block
+
+    
