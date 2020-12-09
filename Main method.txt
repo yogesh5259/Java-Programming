@@ -210,4 +210,10 @@
             -> 1.7 version
                 inside static block
 
+    case 4. checking for main method in java.
     
+        -> version to version different.
+        -> in java 14 checking of main method is after execution of static block.
+        -> if main method is available according the prototype then execute it otherwise give us an error.
+        -> if we shutdown JVM in static block then we don't need main method.
+        -> we can print on console without main method in java 14.
