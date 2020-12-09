@@ -1,0 +1,29 @@
+
+        JAVA COMMAND LINE ARGUMENT
+
+    -> Why we need command line argument?
+        -> To customise behaviour of the main method.
+
+    -> java Test.java A B C
+
+        public class Test{
+            public static void main(String[] args){
+                System.out.println(args[0]);
+                System.out.println(args[1]);
+                System.out.println(args[2]);
+            }
+        }
+
+        Output:-
+            A
+            B
+            C
+    
+
+    -> Why String Array?
+        -> Because most commanly used type is java is String and we can convert those in other type easily.
+
+
+    -> JVM is responsible to create and pass it to the main method as a argument.
+
+    
