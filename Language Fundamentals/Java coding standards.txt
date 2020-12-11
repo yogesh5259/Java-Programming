@@ -1,0 +1,46 @@
+    Java naming conventions.
+
+    Ameerpet standard.
+    class A {
+        public int m1(int x, int y){
+            return x + y;
+        }
+    }
+
+    Hightech city standard.
+
+    package com.yp.scjp
+    public class  Calculator{
+        public static int add(int number1, int number2){
+            return number1 + number2;
+        }
+    }
+
+ 1. Why naming conventions?
+    -> To improve readability and maintainability of code.
+    
+2. Class name in Java.
+    -> In java class names are nouns of english language.
+    -> It is start with Uppercase letter and inner word are also start with uppercase.
+    -> Examples:- String, StringBuffer, Integer, Math.
+
+3. Interface name in java.
+    -> In java Interface names are Adjectives of english language.
+    -> It is start with Uppercase letter and inner word are also start with uppercase.
+    -> Example:- Runnable, Serializable, Comparable, RandomAccess.
+
+4. Method name in java.
+    -> In java method names are verbs of english language or verb-noun combination.
+    -> It is start with a lowercase letter and inner words start with uppercase (CamelCase conventions).
+    -> Example:- print, sqrt, setName, getName, sleep.
+
+5. variable name in java.
+    -> In java variable names are nouns of english language.
+    -> It is start with a lowercase letter and inner words start with uppercase (CamelCase conventions).
+    -> Example:- name, salary.
+
+6. Constant name in java.
+    -> In java Constants names are nouns of english language.
+    -> It is contain only Uppercase and words are seperated by _.
+    -> Example:- PI, MAX_VALUE, MIN_VALUE.
+
