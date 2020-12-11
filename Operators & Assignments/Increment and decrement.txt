@@ -19,5 +19,31 @@
     y = x--             10            10               9
 
 
+case 1. Increment and Decrement Operators are only applicable for variables not for constant values.
+
+    // Valid 
+    int x = 10;
+    int y = ++x;
+    System.out.println(y); //11
+
+    //compile time error
+    int x = 10;
+    int y = ++10; // compile time error:- unexpected type.
+    System.out.println(y);
+
+case 2.
+
+
+
+case 3.
+
+
+
+case 4.
+
+
+
+case 5.
+
 
 
