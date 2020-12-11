@@ -44,3 +44,45 @@
     -> It is contain only Uppercase and words are seperated by _.
     -> Example:- PI, MAX_VALUE, MIN_VALUE.
 
+7. java Bean name.
+    -> Class name ends with "Bean" keyword.
+    -> what is bean?
+        -> simple java class with private property and public getter and setter methods.
+
+
+8. conventions for getter and setter methods.
+    public class StudentBean{
+        private String name;
+
+        private boolean value;
+
+        public void setName(String name){
+            this.name = name;
+        }
+        public String getName(){
+            return name;
+        }
+
+        public boolean getValue(){
+            return value;
+        }
+                OR
+
+        public boolean isValue(){
+            return value;
+        }
+
+    } 
+    1. Getter method conventions.
+        -> It should be public method.
+        -> Return type of getter method should not be void.
+        -> method name prefixed with get and won't take any argument.
+
+    2. Setter method conventions.
+        -> It should be public method.
+        -> Return type of setter method should be void.
+        -> method name prefixed with set and take one argument.
+    
+    3. for boolean naming is bit different.
+        -> in Above Example both are correct but more suitable is "isValue".
+        
