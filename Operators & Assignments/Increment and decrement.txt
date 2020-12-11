@@ -1,0 +1,23 @@
+    Operators in java 
+
+1. Increment and Decrement Operators.
+   
+   -> Increment Operators.
+        -> Two types of Increment Operators.
+            1. pre-increment Example:- y = ++x.
+            2. post-increment Example:- y = x++.
+    
+    -> Decrement Operators.
+        -> Two types of decrement Operators.
+            1. pre-decrement Example:- y = --x.
+            2. post-decrement Example:- y = x--.
+        
+    expression        x value       y value         final x value
+    y = ++x             10            11              11
+    y = x++             10            10              11
+    y = --x             10             9               9
+    y = x--             10            10               9
+
+
+
+
