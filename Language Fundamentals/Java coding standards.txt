@@ -85,4 +85,5 @@
     
     3. for boolean naming is bit different.
         -> in Above Example both are correct but more suitable is "isValue".
-        
+
+
