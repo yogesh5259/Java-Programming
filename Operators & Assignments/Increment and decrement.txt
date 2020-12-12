@@ -38,16 +38,43 @@ case 2. Nesting of Increment and decrement Operators are not allowded.
     System.out.println(y); 
 
 
+case 3. Increment and decrement Operators are not allowded for constant variables.
 
-case 3.
+    final int x = 10;
+    x++;    //  error: cannot assign a value to final variable x
+    System.out.println(x);
+
+case 4. Increment and Decrement Operators are allow for all primitive types except for boolean.
+
+    int x = 10;
+    x++;
+    System.out.println(x); // 11
+
+    double x = 10.5;
+    x++;
+    System.out.println(x); // 11.5
+
+    char x = 'a';
+    x++;
+    System.out.println(x); // b
+
+    boolean x = true;
+    x++;
+    System.out.println(x); // error: bad operand type boolean for unary operator '++'
+
+case 5. Difference between b++ and b = b + 1;
+
+    byte b1 = 10;
+    b++;
+    System.out.println(b);
 
 
+    byte b1 = 10;
+    b = b + 1; // error: incompatible types: possible lossy conversion from int 
+    System.out.println(b);
 
-case 4.
-
-
-
-case 5.
+-> In increment and decrement operator type casting is done implicitly.
+-> but in b = b + 1 operation we need to perform typecasting explicitly because the result type is MAX(int, type of a, type of b).
 
 
 
