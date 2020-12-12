@@ -31,7 +31,11 @@ case 1. Increment and Decrement Operators are only applicable for variables not 
     int y = ++10; // compile time error:- unexpected type.
     System.out.println(y);
 
-case 2.
+case 2. Nesting of Increment and decrement Operators are not allowded.
+
+    int x = 10;
+    int y = ++(++x); // compile time error:- unexpected type.
+    System.out.println(y); 
 
 
 
