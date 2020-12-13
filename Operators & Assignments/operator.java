@@ -18,7 +18,21 @@ class operator {
         // b = b + 1; //error: incompatible types: possible lossy conversion from int.
         // System.out.println(b);
 
-        System.out.println(0/0.0);
+        //System.out.println(0/0);
+        //System.out.println(0/0);
+        //System.out.println(10/0);
+        //System.out.println(10.0/0);
+
+        int x = 10;
+        System.out.println(x > Float.NaN);
+        System.out.println(x >= Float.NaN);
+        System.out.println(x < Float.NaN);
+        System.out.println(x <= Float.NaN);
+        System.out.println(x == Float.NaN);
+        System.out.println(x != Float.NaN);
+        System.out.println(Float.NaN != Float.NaN);
+
+
 
     }
 }
