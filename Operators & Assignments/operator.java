@@ -18,6 +18,7 @@ class operator {
         // b = b + 1; //error: incompatible types: possible lossy conversion from int.
         // System.out.println(b);
 
-        
+        System.out.println(0/0.0);
+
     }
 }

@@ -1,0 +1,45 @@
+        Operators in java 
+
+    2. Arithmatic Operators
+        -> +, -, *, /, %.
+
+        -> For All Arithmatic operation the result is MAX(int, type of a, type of b).
+
+        byte b1 = 10;
+        byte b2 = 20;
+        byte b = b1 + b2; // compile time error.
+        byte b = (byte) b1 + b2; // b = 30
+
+
+        Case 1. 
+
+            System.out.println(10/0);
+            -> 10/0 is int/int so the result is int type.
+            -> In integer type there is no way to represent Infinity that's why we get RuntimeException. 
+            -> for above case the output we get is java.lang.ArithmeticException: / by zero
+
+        Case 2. 
+
+            System.out.println(10.0/0);
+            -> 10.0/0 is double/int so the result is double type.
+            -> In floting point type there is way to represent Infinity that's why we get Infinity.
+            -> for above case the output we get is Infinity.
+
+        Case 3.
+
+            System.out.println(0/0);
+            -> 0/0 is int/int so the result is int type.
+            -> In integer type there is no way to represent undefined that's why we get RuntimeException.
+            -> for above case the output we get is java.lang.ArithmeticException: / by zero
+ 
+        Case 4.
+
+            System.out.println(0/0.0);
+            -> 0/0.0 is int/double so the result is double type.
+            -> In floting point type there is way to represent undefined that's why we get NaN.
+            -> for above case the output we get is NaN.
+
+
+    ** Regarding Arithmatic Exception**
+    -> Arithmetic Exception cause by only / and %.
+    -> 
