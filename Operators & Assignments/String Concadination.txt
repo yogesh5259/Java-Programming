@@ -2,4 +2,42 @@
     Operators in java 
 
 3. String Concadination.
+
+    -> In java operator overloading is not available accept "+" operator.
+    -> In java operator calculation based on it's precident.
+   
+    -> "Yogesh"+10 -> output:- Yogesh10
+    -> string + number -> String
+
+    -> 10 + 20 -> output:- 30
+    -> number + number -> number
+
+
+    -> Consider the following assignment
+        String a = "Yogesh";
+        int b = 10, c = 20, d = 30;
+
+    Case 1. 
+        -> System.out.println(a+b+c+d);
+        output:- Yogesh102030;
+        -> String + number -> string
+
+    Case 2.
+        -> System.out.println(b+c+d+a);
+        output:- 60Yogesh;
+        -> number + number -> number
+        -> number + string -> string
+
+    case 3.
+        -> System.out.println(b+c+a+d);
+        output:- 30Yogesh30;
+        -> number + number -> number
+        -> number + string -> string
+        -> String + number -> string
+
+
+NOTE:-  -> If Operator "+" applied between two integer then it behave like arithmatic operation.
+        -> If operator "+" applied between string and number then it behave like concadination.
+        
+        
     
