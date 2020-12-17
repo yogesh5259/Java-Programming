@@ -1,0 +1,27 @@
+    Operators in java 
+
+4. Relational Operators(>,>=,<,<=).
+
+    System.out.println(10 < 20); // true
+    System.out.println('a' < 10); //false
+    System.out.println('a' < 97.6);  //true
+    System.out.println('a' > 'A');  //true
+
+    Case 1.
+
+        -> System.out.println(true > false); //compile time error:- error: bad operand types for binary operator '>'.
+
+    Case 2.
+        -> We can not apply replational operator for object types 
+        System.out.println("Yogesh123" > "Yogesh");// compile time error:- error: bad operand types for binary operator '>'.
+
+    Case 3. 
+        -> Nesting of Relational Operator is not allowded otherwise we get compile time error.
+        -> System.out.println(10<20<30); // compile time error:- error: bad operand types for binary operator '>'.
+
+    
+
+    
+
+
+
