@@ -15,3 +15,22 @@
             Customer c = (Customer)o;
             //perform customer specific functionality.
         }
+
+    
+    -> Syntex (r instanceof x) -:- r is object reference and x is any interface/class name.
+
+    Example:- 
+        -> Thread t = new Thread();
+        System.out.println(t instanceof Thread); //true
+        System.out.println(t instanceof Object); //true
+        System.out.println(t instanceof Runnable); //true
+
+        -> If there is no relation between two argument type then we will get compile time error.
+        -> Relation like parent to child or child to parent or same type. 
+        System.out.println(t instanceof String); // Compiler time error :- error: incompatible types: Thread cannot be converted to String.
+
+    -> null instanceof x :- x is any class/interface.
+        -> System.out.println(null instanceof String); // false
+        -> System.out.println(null instanceof Thread); //false
+        -> System.out.println(null instanceof Object); //false
+        -> System.out.println(null instanceof Runnable); //false
