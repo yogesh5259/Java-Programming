@@ -22,11 +22,33 @@
 
 
         Case 2.
-            -> If we try to apply Equality Operator to the object type then there must be some relation between two argument.
+            -> If we try to apply Equality Operator to the object type then there must be some relation between argument types.
             -> Relation like parent to child or child to parent or both are same type.
             Object o = new Object();
             Thread t = new Thread();
             String s = new String();
             System.out.println(t == o); // false
             System.out.println(o == s); // false
-            System.out.println(s == t); //compile time error:- error: incomparable types: String and Thread
+            System.out.println(s == t); //compile time error:- error: incomparable types: String and Thread.
+
+
+    -> What  is difference between == and .equal() method?
+        -> In general == Operator ment for reference(address) comparison.
+        -> In general .equal() ment for content comparison.
+
+            Example:-
+                String s1 = new String("Yogesh");
+                String s2 = new String("Yogesh");
+                System.out.println(s1 == s2); // false
+                System.out.println(s1.equal(s2)); // true
+
+
+    -> For any object reference r, r == null is always false.
+
+    String s = new String("Yogesh");
+    System.out.println(s == null); // false
+
+    String s = null;
+    System.out.println(s == null); // true
+
+    System.out.println(null == null); //true

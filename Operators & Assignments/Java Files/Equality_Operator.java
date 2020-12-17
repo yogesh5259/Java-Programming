@@ -15,5 +15,13 @@ public class Equality_Operator {
         System.out.println(t == o); // false
         System.out.println(o == s); // false
         //System.out.println(s == t); //compile time error:-error: incomparable types: String and Thread
+        
+        String s1 = new String("Yogesh");
+        System.out.println(s1 == null); // false
+
+        String s2 = null;
+        System.out.println(s2 == null); // true
+
+        System.out.println(null == null); //true
     }
 }
