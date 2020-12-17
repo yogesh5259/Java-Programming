@@ -1,6 +1,6 @@
         Operators in java 
 
-    2. Arithmatic Operators
+    2. Arithmatic Operators(+,-,/,*,%).
         -> +, -, *, /, %.
 
         -> For All Arithmatic operation the result is MAX(int, type of a, type of b).

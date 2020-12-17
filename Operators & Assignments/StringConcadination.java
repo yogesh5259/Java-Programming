@@ -5,6 +5,5 @@ class StringConcadination {
         System.out.println(a+b+c+d);
         System.out.println(b+c+d+a);
         System.out.println(b+c+a+d);
-
     }
 }

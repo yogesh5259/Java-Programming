@@ -1,7 +1,7 @@
 
     Operators in java 
 
-3. String Concadination.
+3. String Concadination operator(+).
 
     -> In java operator overloading is not available accept "+" operator.
     -> In java operator calculation based on it's precident.
