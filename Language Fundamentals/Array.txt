@@ -125,7 +125,7 @@
     case 3.
     String[] s = new String["a","aa","aaa"];
     Object[] o = s; // 100% valid
-    // In object type array we can assign chid array to parent variable.
+    // In object type array, we can assign chid array to parent variable.
 
     int -> float        //valid
     int[] -> float[]    //Invalid
