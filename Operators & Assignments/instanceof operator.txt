@@ -1,0 +1,17 @@
+        Operators in java 
+
+    6. instanceof Operators(instanceof)
+
+    -> To check the object is perticular type or not we use instanceof Operator.
+
+    Example:-
+        -> we have ArrayList l have multiple type of objects in it.
+        
+        Object o = l.get(0);
+        if(o instanceof Student){
+            Student s = (Student)o;
+            //perform student specific functionality.
+        } else if(o instanceof Customer){
+            Customer c = (Customer)o;
+            //perform customer specific functionality.
+        }
