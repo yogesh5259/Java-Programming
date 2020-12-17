@@ -1,0 +1,32 @@
+        Operators in java 
+
+    5. Equality Operators(==, !=)
+
+        -> We can apply Equality Operator including boolean also.
+        -> System.out.println(10 == 20); // false
+        -> System.out.println('a' == 'b');  // false
+        -> System.out.println('a' == 97.0); // true 
+        -> System.out.println(false == false);  // true
+
+        
+        -> Equality Operator for object type.
+            -> two object r1 and r2 return true if both objects are pointing to the same object.
+
+        Case 1.
+
+            Thread t1 = new Thread();
+            Thread t2 = new Thread();
+            Thread t3 = t1;
+            System.out.println(t1 == t2); // false
+            System.out.println(t1 == t3); // true
+
+
+        Case 2.
+            -> If we try to apply Equality Operator to the object type then there must be some relation between two argument.
+            -> Relation like parent to child or child to parent or both are same type.
+            Object o = new Object();
+            Thread t = new Thread();
+            String s = new String();
+            System.out.println(t == o); // false
+            System.out.println(o == s); // false
+            System.out.println(s == t); //compile time error:- error: incomparable types: String and Thread
