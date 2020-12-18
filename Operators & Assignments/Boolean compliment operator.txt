@@ -1,0 +1,19 @@
+
+        Java operator.
+
+    9. Boolean compliment operator(!).
+        -> Boolean compliment operator is only applicable for boolean.
+
+        -> System.out.println(!4);  // Compile time error:- bad operand type int for unary operator '!'
+        -> System.out.println(!true); // false
+
+
+
+SUMMARY:-
+
+    (&,|,^) -> Applicable for both integer and boolean type.
+
+    (~) -> Applicable only for integer types.
+
+    (!) -> Applicable only for boolean.
+
