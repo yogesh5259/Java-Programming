@@ -1,0 +1,91 @@
+
+            Java operators.
+
+    10. short-circuit operators(&&, ||).
+
+        -> shot-circuit operators are exectly same as bitwise oeprator(&,|) except the following differences.
+        
+                         &,|                                           &&, ||
+
+        1. Both argument should be evaluated always.    1. Second argument is optional.
+        2. Relatively performence is low.               2. Relatively performence is high.
+        3. Applicable for both integer and boolean.     3. Applicable only for boolean type.
+
+
+        -> x && y
+            -> y will be evaluated if and only if x is true. if x is false then y won't be evaluated.
+
+        -> x || y
+            -> y will be evaluated if and only if x is false. if x is true then y won't be evaluated.
+
+
+
+        Example 1:-
+
+            int x = 10; 
+            int y = 15;
+
+            if(++x < 10 & ++y > 15){
+                x++;
+            } else {
+                y++;
+            }
+            System.out.println(x + "..." + y) // 11...17
+            
+
+
+        Example 2:-
+            
+            int x = 10; 
+            int y = 15;
+
+            if(++x < 10 && ++y > 15){
+                x++;
+            } else {
+                y++;
+            }
+            System.out.println(x + "..." + y) // 11...16
+            
+
+
+        Example 3:-
+
+            int x = 10; 
+            int y = 15;
+
+            if(++x < 10 | ++y > 15){
+                x++;
+            } else {
+                y++;
+            }
+            System.out.println(x + "..." + y) // 12...16
+            
+
+        Example 4:-
+
+            int x = 10; 
+            int y = 15;
+
+            if(++x < 10 || ++y > 15){
+                x++;
+            } else {
+                y++;
+            }
+            System.out.println(x + "..." + y) // 12...16
+
+        Example 5:-
+
+            int x = 10;
+            if(++x < 10 && (x/0 > 10)){
+                System.out.println("Hello");
+            } else{
+                System.out.println("HI");
+            }
+
+            output:- HI
+            
+
+
+        
+
+
