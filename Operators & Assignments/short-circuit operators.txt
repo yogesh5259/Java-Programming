@@ -30,7 +30,7 @@
             } else {
                 y++;
             }
-            System.out.println(x + "..." + y) // 11...17
+            System.out.println(x + "..." + y); // 11...17
             
 
 
@@ -44,7 +44,7 @@
             } else {
                 y++;
             }
-            System.out.println(x + "..." + y) // 11...16
+            System.out.println(x + "..." + y); // 11...16
             
 
 
@@ -58,7 +58,7 @@
             } else {
                 y++;
             }
-            System.out.println(x + "..." + y) // 12...16
+            System.out.println(x + "..." + y); // 12...16
             
 
         Example 4:-
@@ -71,7 +71,7 @@
             } else {
                 y++;
             }
-            System.out.println(x + "..." + y) // 12...16
+            System.out.println(x + "..." + y); // 12...16
 
         Example 5:-
 
