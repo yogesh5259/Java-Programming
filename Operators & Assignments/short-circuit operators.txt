@@ -83,7 +83,8 @@
             }
 
             output:- HI
-            
+
+            -> In above example if we replace && with & then we will get Runtime Exception. / by zero.
 
 
         
