@@ -1,0 +1,28 @@
+        Java Operators.
+
+    11. Type Cast operator.
+        
+        -> There are two type of type casting.
+            1. Implicit type casting.
+            2. Explicit type casting.
+
+    1. Implicit type casting.
+        -> when we assign smaller data type value to bigger data type variable.
+        -> perfomed by compiler.
+        -> loss less.
+        -> widening.
+
+        byte -> short -> int -> long -> float -> double.
+        char -> int.
+        All above conversions are Implicit type casting.
+
+    2. Explicit type casting 
+        -> When we assign bigger data type value to smaller data type variable.
+        -> perfomed by programmer.
+        -> may be a chance of loss of information.
+        -> narrowing
+
+        
+
+
+    
