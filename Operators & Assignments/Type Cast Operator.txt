@@ -6,23 +6,65 @@
             1. Implicit type casting.
             2. Explicit type casting.
 
-    1. Implicit type casting.
-        -> when we assign smaller data type value to bigger data type variable.
-        -> perfomed by compiler.
-        -> loss less.
-        -> widening.
+        1. Implicit type casting.
+            -> when we assign smaller data type value to bigger data type variable.
+            -> perfomed by compiler.
+            -> loss less.
+            -> widening.
 
-        byte -> short -> int -> long -> float -> double.
-        char -> int.
-        All above conversions are Implicit type casting.
+            byte -> short -> int -> long -> float -> double.
+            char -> int.
+            All above conversions are Implicit type casting.
 
-    2. Explicit type casting 
-        -> When we assign bigger data type value to smaller data type variable.
-        -> perfomed by programmer.
-        -> may be a chance of loss of information.
-        -> narrowing
+        2. Explicit type casting 
+            -> When we assign bigger data type value to smaller data type variable.
+            -> perfomed by programmer.
+            -> may be a chance of loss of information.
+            -> narrowing
 
-        
+            double -> float -> int -> short -> byte
+            int -> char.
 
 
-    
+        Example 1:-
+
+            int x = 130;
+            byte b = x; //error: incompatible types: possible lossy conversion from int to byte
+            System.out.println(b);
+
+        Example 2:-
+
+            int x = 130;
+            byte b =(byte)x; 
+            System.out.println(b); //-126
+
+            -> Reason behind the Example 2 output:-
+                ->  0000...0010000010 (32 bit representation because it is int type).
+                -> Compress to 8 bit then the last 8 bit is considered. -> 10000010
+                -> In 8 bit representation highest bit is for sign bit so the  number is 1(0000010).
+                -> 1 means negative number 1(0000010).
+                -> negative numbers are represented in 2's compliment form.
+                -> so the 2's compliment of 1(0000010) is 1's compliment + 1.
+                    1(0000010) -> 1's compliment -> 1 (1111101 + 1) -> 1(1111110) -> (-126).
+                
+        Example 3:-
+
+            int x = 150;
+            short s = (short) x;
+            System.out.println(s);//150
+
+            byte b = (byte) x;
+            System.out.println(b);//-106
+
+            -> As per above terminology we get output.
+
+        Example 4:-
+
+            double d = 130.456;
+            int x = (int)d;
+            System.out.println(x); //130
+
+            byte b = (byte)d;
+            System.out.println(b); //-126
+
+            -> we we assign floting point value to the integer type then the floting point digits are disgarded.
