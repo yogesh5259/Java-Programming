@@ -56,3 +56,10 @@
                 b += 3; // Internal type casting is performed b = (byte) b + 1.
                 System.out.println(b); // -126 
                 
+
+
+            Example 4:-
+                int a,b,c,d;
+                a = b = c = d = 20;
+                a += b -= c *= d /=2;  // right to left evaluation for assignment.
+                System.out.println(a+"..."+b+"..."+c+"..."+d);// -160...-180...200...10
