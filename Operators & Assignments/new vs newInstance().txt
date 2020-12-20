@@ -1,0 +1,39 @@
+
+    new keyword vs newInstance() method in java 
+        
+        ** new operator **
+
+            -> we can use new operator to create an object if we know class name at the beginning.
+            -> To use new operator class not required to contain no-arg constructor.
+            -> while using new operator at runtime if corrosponding class file is not available then we get runtime exception:- NoClassDefFoundError
+
+            Test t = new Test();
+            Student s = new Student(10);
+            Customer c = new Customer("Yogesh");
+
+
+        ** newInstance() **
+
+            -> newInstance is a method present in class Class.
+            -> we can use new instance to create object if we don't know class name at the beginning and it is available dynamically at runtime.
+            -> To use newInstance() method class must have to contain no-arg constructor.
+            -> while using newiInstance() method at runtime if the corrosponding .class file is not available then we will runtime exception :- ClassNotFoundException
+
+            Example 1:- 
+
+                class Customer{
+
+                } 
+                class Student{
+
+                }
+                class Test{
+                    public static void main(String[] args){
+                        Object o = Class.forName(args[0]).newiInstance();
+                        System.out.println("Object created for:" + o.getClass().getName());
+                    }
+                }
+
+            Example 2:-
+
+                -> In java web application web container create object of servlet based on web request using newInstance() method.
