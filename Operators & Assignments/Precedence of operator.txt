@@ -1,0 +1,42 @@
+        Java Operators.
+
+    -> Precedence of Operators.
+        1. unary operator. x++;
+        2. binary operator. a + b
+        3. ternary operator. (10 < 20) ? 10 : 20;
+
+
+    Operator Precedence chart.
+
+    1.Unary Operators:
+        [ ], x++, x--  //All at same level (evaluated form left to right if same level)
+        ++x, --x, ~, !  // All at same level
+        new, <type>     // All at same level
+    
+    2. Arithmatic Operators:
+        *, / , %
+        +, -
+
+    3. Shift Operators:
+        >>,>>>,<<
+    
+    4. Comparison Operators:
+        <,<=,>,>=,instanceof
+
+    5. Equality Operators:
+        ==,!=
+    
+    6. Bitwise Operators:
+        &
+        ^
+        |
+    
+    7. Short circuit Operators:
+        &&
+        ||
+    
+    8.Conditional Operator:
+        ?:
+
+    9. Assignment Operators:
+        =,+=,-=,*= .....
