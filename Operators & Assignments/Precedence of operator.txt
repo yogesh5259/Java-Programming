@@ -45,6 +45,8 @@
     
     Evaluation order of Operand in java 
 
+        -> In java we have only operator Precedence but not operand Precedence.
+        -> before appling any operator all operands evaluated form left to right.
         Example:-
 
         class Test {
@@ -56,3 +58,11 @@
                 return i;
             }
         }
+
+
+        1 + 2 * 3 / 4 + 5 * 6 
+        1 + 6/4 + 5 * 6  (interger division)
+        1 + 1 + 5 * 6
+        1 + 1 + 30
+        2 + 30
+        32
