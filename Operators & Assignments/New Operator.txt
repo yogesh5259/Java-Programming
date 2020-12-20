@@ -1,0 +1,15 @@
+        Java Operators.
+
+    14. new Operator.
+
+        -> To create object we use new operator.
+        -> Constructor is not to create object.
+        -> After creating a object immediately executed is constructor.
+        -> In java distruction of object is Garbage collector responsibility.
+
+    15. [] operator.
+        
+        -> we use this operator to declare and create array.
+        int[] array = new int[10];
+    
+    
