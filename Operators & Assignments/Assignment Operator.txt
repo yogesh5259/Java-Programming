@@ -1,0 +1,58 @@
+        Java Operators.
+
+    12. Assignment Operator.
+
+        -> There are three types of assignment Operator in java.
+            1. simple assignment.
+            2. chained assignment.
+            3. compound assignment.
+
+        1. simple assignment.
+            -> int x = 10;
+
+        2. chained assignment.
+            Example 1:-
+                -> int a,b,c,d;
+                a = b = c = d = 20;
+                System.out.println(a+"..."+b+"..."+c+"..."+d);//20...20...20...20
+            
+            Example 2:-
+                -> we can not perform chained assignment directly at the time of declaration.
+                    int a = b = c = d = 20; // compile time error:- can not find symbol.
+
+            Example 3:-
+                -> int b,c,d;
+                int a = b = c = d =20; 
+                    System.out.println(a+"..."+b+"..."+c+"..."+d);//20...20...20...20
+
+
+        3. compound assignment.
+            -> Assignment Operator mixed with other Operator is known as compound Operator.
+            -> below are all possible combination of compound Operator.
+            1. +=       6. &=       9. >>= (right shift)
+            2. -=       7. ^=       10. >>>= (unsigned right shift)
+            3. *=       8. |=       11. <<= (left shift)
+            4. /=
+            5. %=
+
+            Example 1:-
+                int a = 10;
+                a += 20;
+                System.out.println(a);
+
+
+            Example 2:- 
+                -> Result type is max(int,type of first argument, type of second argument)
+                -> Internal type casting is performed in 2 and 3 code.
+
+                byte b = 10;                      byte b = 10;                  byte b = 10;
+                b = b + 1;                        b++; // b = (byte) b + 1;     b += 1; // b = (byte) b + 1;
+                System.out.println(b);            System.out.println(b);        System.out.println(b);
+                //Compile time error.             //11                          //11
+                                                
+            Example 3:-
+
+                byte b = 127;
+                b += 3; // Internal type casting is performed b = (byte) b + 1.
+                System.out.println(b); // -126 
+                
