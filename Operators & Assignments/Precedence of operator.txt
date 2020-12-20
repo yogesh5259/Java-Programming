@@ -8,35 +8,51 @@
 
     Operator Precedence chart.
 
-    1.Unary Operators:
-        [ ], x++, x--  //All at same level (evaluated form left to right if same level)
-        ++x, --x, ~, !  // All at same level
-        new, <type>     // All at same level
-    
-    2. Arithmatic Operators:
-        *, / , %
-        +, -
+        1.Unary Operators:
+            [ ], x++, x--  //All at same level (evaluated form left to right if same level)
+            ++x, --x, ~, !  // All at same level
+            new, <type>     // All at same level
+        
+        2. Arithmatic Operators:
+            *, / , %
+            +, -
 
-    3. Shift Operators:
-        >>,>>>,<<
-    
-    4. Comparison Operators:
-        <,<=,>,>=,instanceof
+        3. Shift Operators:
+            >>,>>>,<<
+        
+        4. Comparison Operators:
+            <,<=,>,>=,instanceof
 
-    5. Equality Operators:
-        ==,!=
-    
-    6. Bitwise Operators:
-        &
-        ^
-        |
-    
-    7. Short circuit Operators:
-        &&
-        ||
-    
-    8.Conditional Operator:
-        ?:
+        5. Equality Operators:
+            ==,!=
+        
+        6. Bitwise Operators:
+            &
+            ^
+            |
+        
+        7. Short circuit Operators:
+            &&
+            ||
+        
+        8.Conditional Operator:
+            ?:
 
-    9. Assignment Operators:
-        =,+=,-=,*= .....
+        9. Assignment Operators:
+            =,+=,-=,*= .....
+
+
+    
+    Evaluation order of Operand in java 
+
+        Example:-
+
+        class Test {
+            public static void main(String[] args){
+                System.out.println(m1(1) + m2(2) * m1(3) / m1(4) + m1(5) * m1(6)); //32
+            }
+            public static int m1(int i) {
+                System.out.println(i);
+                return i;
+            }
+        }
