@@ -1,0 +1,13 @@
+
+*** instanceof vs isInstance() ***
+==================================
+
+    instanceof operator:-
+        -> we use instanceof operator to check whether the given object is perticular type or not and we know the type at beginning.
+
+    
+    isInstance() method:-
+        -> isInstance() method is present inside class Class.
+        -> we use isInstance() method to check whether the given object is perticular type or not and we don't know the type at beginning.
+        -> we provide type dynamically at runtime.
+        
