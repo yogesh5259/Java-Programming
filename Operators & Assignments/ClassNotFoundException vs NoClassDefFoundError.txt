@@ -1,0 +1,13 @@
+
+*** ClassNotFoundException vs NoClassDefFoundError***
+=======================================================
+
+    ClassNotFoundException:-
+        -> when we use newInstance() method to dynamically provide object type then if the corresponding .class file is not available at runtime then we get ClassNotFoundException.
+        -> ClassNotFoundException is checked Exception.
+
+    NoClassDefFoundError:-
+        -> when we use new keyword to create object from hard-coded class name then if the corresponding .class file is not available at runtime then we get NoClassDefFoundError.
+        -> NoClassDefFoundError is unchecked Exception.
+
+
