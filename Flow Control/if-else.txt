@@ -1,0 +1,122 @@
+
+        **If-else**
+        ============
+
+    Syntex:-
+        
+        if(condition){
+            //execute if condition is true.
+        } else {
+            //execute if condition is false.
+        }
+
+    Case 1:- 
+        -> condition must be boolean.
+        Example 1 :-
+
+            int x = 10;
+            if(x = 20){
+                System.out.println("HELLO");
+            } else {
+                System.out.println("HI");
+            }
+
+            output:- compile time error:- Incompatable type
+
+        Example 2:- 
+
+            int x = 10;
+            if(x == 20){
+                System.out.println("HELLO");
+            } else {
+                System.out.println("HI");
+            }
+
+            output:- HI
+
+        Example 3:-
+            -> After evaluation of condition end result must be boolean. 
+            boolean b = true;
+            if(b = false) { 
+                System.out.println("HELLO");
+            } else {
+                System.out.println("HI");
+            }
+            
+            output:- HI
+
+
+        Example 4:-
+
+            boolean b = false;
+            if(b==false){
+                System.out.println("HELLO");
+            } else {
+                System.out.println("HI");
+            }
+            
+            output:- HELLO
+            
+
+    Case 2:-
+        -> { } and else part is optional.
+        -> without { } we can write only one statement.
+        -> one statement should not be declaration.
+
+        Example 1:- //valid
+            
+            if(true) 
+                System.out.println("HI");
+
+            output:- HI
+        
+        Example 2:- //valid
+
+            if(true){
+                int x = 10;
+                System.out.println(x);
+            }
+
+            output:- 10
+
+        Example 3:- //valid
+
+            -> ; is a valid java statement jvm consider it as a blank statement.
+            if(true);
+
+            output:- 
+
+        Example 4:- //Invalid
+            
+            -> statement should not be declaration.
+
+            if(true)
+                int x = 20;
+
+            output:- compile time error
+
+    Case 3:-
+        -> else block always refer to the nearest if block.
+        Example 1:- 
+
+            if(true)
+                System.out.println("Hello");
+                if(10 < 20)
+                    System.out.println("10");
+            else{
+                System.out.println("20");
+            }
+
+
+        Example 2:- 
+        
+        int x =10;
+        int y =20;
+        if(true)
+            System.out.println("Hello");
+            if(x > y){
+                System.out.println("10");
+            } else
+            System.out.println("20");
+        else                            // compile time error else without if
+            System.out.println("hey");
