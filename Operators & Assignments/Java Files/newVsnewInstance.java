@@ -8,7 +8,7 @@ class Student{
 }
 class newVsnewInstance {
     public static void main(String[] args) throws Exception {
-        Object o = Class.forName(args[0]).newInstance();
+        Object o = Class.forName(args[0]).newInstance(); // provide class name from command line argument.
         System.out.println("Object created for:" + o.getClass().getName());
     }
 }
