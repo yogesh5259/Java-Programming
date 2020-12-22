@@ -177,3 +177,78 @@
             output:- compile time error :- duplicate case label
 
 
+        Fall-through inside switch
+        --------------------------
+
+        case 8:-
+            -> With in the switch if any case is matched from that case onwards all statement will be executed until break or end of the switch this is called Fall-through inside switch.
+            -> the mail advantage of fall-through is we can define common action for multiple statement.
+
+            switch(x){
+                    case 0:
+                        System.out.println(0);
+
+                    case 1:
+                        System.out.println(1);
+                        break;
+
+                    case 2:
+                        System.out.println(2);
+
+                    default:
+                        System.out.println("def");
+            }
+
+            output:- 
+                x = 0
+                 0
+                 1
+
+                x = 1
+                 1
+
+                x = 2
+                 2
+                 def
+
+                x = 3
+                 def
+
+        case 9:
+            -> with in the switch we can take default case at most once.
+            -> default will be executed if and only if there is no case matched.
+            -> we can write default anywhere but it is recommended to write as a last case.
+
+            switch(x){
+                default:
+                    System.out.println("def");
+
+                case 0:
+                    System.out.println(0);
+                    break;
+
+                case 1:
+                    System.out.println(1);
+                
+
+                case 2:
+                    System.out.println(2);
+
+            }
+
+            output:- 
+                x = 0
+                 0
+
+                x = 1
+                 1
+                 2
+
+                x = 2
+                 2
+                 
+
+                x = 3
+                 def
+                 0
+        
