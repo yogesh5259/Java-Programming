@@ -2,7 +2,7 @@
         ** switch **
         ============
 
-        -> If several options are available then not recommended to use nested if else because it reduce redability.
+        -> If several options are available then not recommended to use nested if else because it reduce readability.
         -> To handle this requriment we should go for switch.
 
     -> syntex:-
