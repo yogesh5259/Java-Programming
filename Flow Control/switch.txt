@@ -58,7 +58,7 @@
 
     Case 3:
 
-        -> Inside switch every statement should be under some case or default that is independent statement are not allowed inside swich other wise we will get compile time error.
+        -> Inside switch every statement should be under some case or default that is independent statement are not allowed inside switch other wise we will get compile time error.
         
         int x = 10;
         switch(x){
@@ -66,3 +66,114 @@
         }
 
         output:- case, default, or '}' expected
+
+
+    Case 4:
+        -> every case label should be compile time constant that is constant expression.
+        -> if we declare y as final then we won't get compile time error.
+
+        int x = 10;
+        int y = 20;
+        switch(x){
+            case 10:
+                System.out.println(10);
+                break;
+            case y:
+                System.out.println(20);
+                break;
+        }
+
+        output:- constant expression required
+
+        int x = 10;
+        final int y = 20;
+        switch(x){
+            case 10:
+                System.out.println(10);
+                break;
+            case y:
+                System.out.println(20);
+                break;
+        }
+
+        output:- 10
+
+
+        Case 5: 
+            -> Both switch argument and case label can be expression but case should be constant expression.
+
+            int x = 10;
+            switch(x){
+                    case 10:
+                        System.out.println(10);
+                        break;
+
+                    case 10+20+30:
+                        System.out.println(60);
+                        break;
+            }
+
+
+        Case 6:
+            -> every case label should be in the range of switch argument type otherwise we will get compile time error. 
+
+            byte b = 10;                                    
+            switch(b){                              //byte type             
+                case 10:
+                    System.out.println(10);
+                    break;
+
+                case 100:
+                    System.out.println(100);
+                    break;
+
+                case 1000:
+                    System.out.println(1000);
+                    break;
+            } 
+
+            output:- compile time error possible lossy conversion from int to byte
+
+            byte b = 10;                                    
+            switch(b + 1){                      //int type                        
+                case 11:
+                    System.out.println(11);
+                    break;
+
+                case 100:
+                    System.out.println(100);
+                    break;
+
+                case 1000:
+                    System.out.println(1000);
+                    break;
+            } 
+
+            output:- 11
+
+        
+        Case 7:
+            -> dupliacte case label should not be allowed.
+
+            int x = 10;                                    
+            switch(x){                                             
+                case 97:
+                    System.out.println(97);
+                    break;
+
+                case 98:
+                    System.out.println(98);
+                    break;
+
+                case 99:
+                    System.out.println(99);
+                    break;
+                
+                case 'a':
+                    System.out.println('a');
+                    break;
+            } 
+
+            output:- compile time error :- duplicate case label
+
+
