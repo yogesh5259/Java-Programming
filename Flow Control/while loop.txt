@@ -3,6 +3,123 @@
         ** While loop **
         ================
 
+    -> If we know number of iteration in advance then we should go for for loop.
+    -> If we don't know number of iteration in advance then we should go for while loop.
 
-    
+    Syntex:-
+        -> The argument shoud be boolean type if we are trying to provide any other type then we will get compile time error.
+
+        while(b){
+            //Action
+        }
+
+    Case 1:
+        -> { } braces are optional.
+        -> Without { } we can write only one statement which should not be declarative statement.
+        
+        Example 1:-
+
+            while(true){
+                System.out.println("hello");
+            }
+
+        Example 2:-
+
+            while(true);
+
+        Example 3:-
+
+            while(true)
+                int x = 10;  //compile time error: variable declaration not allowed here.
+
+        Example 4:-
+
+            while(true){
+                int x = 10;
+            }
+
+    Case 2:
+
+        Example 1:- 
+            
+            while(true){
+                System.out.println("Hello");
+            }
+            System.out.println("Hi");
+
+            output:- unreachable statement
+
+        Example 2:- 
+            
+            while(false){
+                System.out.println("Hello");
+            }
+            System.out.println("Hi");
+
+            output:- unreachable statement
+
+        Example 3:-
+            
+            int a = 10, b = 20;
+            while(a < b){
+                System.out.println("Hello");
+            }
+            System.out.println("Hi");
+            
+            output:- hello
+                     hello
+                     hello
+                     .
+                     .
+                     .
+
+        Example 4:-
+            
+            int a = 10, b = 20;
+            while(a > b){
+                System.out.println("Hello");
+            }
+            System.out.println("Hi");
+
+            output:- Hi
+
+        Example 5:-
+            
+            final a = 10, b = 20;
+            while(a < b){
+                System.out.println("Hello");
+            }
+            System.out.println("Hi");
+
+            output:- unreachable statement
+
+        Example 6:-
+            
+            final a = 10, b = 20;
+            while(a > b){
+                System.out.println("Hello");
+            }
+            System.out.println("Hi");
+
+            output:- unreachable statement
+
+
+            **NOTE**
+            --------
+
+        -> Every final variable will be replaced by the value at compile time only.
+
+        final int a = 10;       
+        int b = 10;                After compile 
+        System.out.println(a);   ----------------> System.out.println(10);
+        System.out.println(b);   ----------------> System.out.println(b);
+
+        -> If every argument is a final variable(compile time constant) then that operation should be performed at compile time only. 
+
+        final int a = 10, b = 20;   
+        int c = 20;                     After compile
+        System.out.println(a + b);  -------------------> System.out.println(30);
+        System.out.println(a + c);  -------------------> System.out.println(10 + c);
+        System.out.println(a < b);  -------------------> System.out.println(true);
+        System.out.println(a < c);  -------------------> System.out.println(10 < c);
 
