@@ -1,0 +1,137 @@
+
+        ** do-while loop**
+        ==================
+
+    -> If we want to execute loop body at least once then we should go for do-while loop.
+
+    Syntex:-
+
+        do{
+            //body
+        } while(b);
+
+    -> ; is mandetory.
+    
+    Case 1:-
+        -> { } braces are option and without { } braces we can take only one statement which should not be declarative statement.
+        -> without { } one statement is mandetory.
+
+        Example 1:-
+
+            do
+                System.out.println();
+            while(true);
+
+        Example 2:-
+
+            do
+                ;
+            while(true);
+        
+        Example 3:-
+
+            do
+                int x = 10; //compile time error:-variable declaration not allowed here.
+            while(true);
+
+        Example 4:-
+
+            do{
+                int x = 10;
+            }while(true);
+
+        Example 5:-
+
+            do 
+
+            while(true);
+
+    Case 2:-
+
+        do while(true)                     |     do
+            System.out.println("Hello");   |         while(true)
+        while(false);                      |             System.out.println("Hello");
+                                           |     while(false);
+        output:-
+            Hello
+            Hello
+            Hello
+            .
+            .
+            .
+            .
+
+    Case 3:-
+
+        Example 1:-
+
+            do{
+                System.out.println("Hello");
+            }while(true);
+            System.out.println("Hi);
+
+            output:- compile time error :- unreachable statement
+
+        
+        Example 2:-
+
+            do{
+                System.out.println("Hello");
+            }while(false);
+            System.out.println("Hi);
+
+            output:-
+                Hello
+                Hi
+        
+        Example 3:-
+
+            int a = 10, b = 20;
+            do{
+                System.out.println("Hello");
+            }while(a < b);
+            System.out.println("Hi);
+
+            output:-
+                Hello
+                Hello
+                Hello
+                .
+                .
+                .
+        
+        Example 4:-
+
+            int a = 10, b = 20;
+            do{
+                System.out.println("Hello");
+            }while(a > b);
+            System.out.println("Hi);
+
+            output:-
+                Hello
+                Hi
+
+        Example 5:-
+
+            final int a = 10,b = 20;
+            do{
+                System.out.println("Hello");
+            }while(a < b);
+            System.out.println("Hi);
+
+            output:- compile time error: unreachable statement
+
+
+        Example 6:-
+
+            final a = 10, b = 20;
+            do{
+                System.out.println("Hello");
+            }while(a > b);
+            System.out.println("Hi);
+
+            output:- 
+                Hello
+                Hi
+
