@@ -81,7 +81,7 @@
 
         Example 3:- //valid
 
-            -> ; is a valid java statement jvm consider it as a blank statement.
+            -> ; is a valid java statement jvm consider it as a empty statement.
             if(true);
 
             output:- 
