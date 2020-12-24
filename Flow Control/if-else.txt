@@ -2,7 +2,7 @@
         **If-else**
         ============
 
-    Syntex:-
+    Syntax:-
         
         if(condition){
             //execute if condition is true.
