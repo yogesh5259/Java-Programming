@@ -1,0 +1,16 @@
+
+        **for loop**
+        ============
+
+    -> If we know the number of iteration in advance then we should go for for loop.
+
+    syntax:- 
+
+        for(initialization; condition; increment){
+            //Actions
+        }
+
+
+    
+
+
