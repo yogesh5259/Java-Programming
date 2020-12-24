@@ -6,7 +6,7 @@
     -> If we know number of iteration in advance then we should go for for loop.
     -> If we don't know number of iteration in advance then we should go for while loop.
 
-    Syntex:-
+    Syntax:-
         -> The argument shoud be boolean type if we are trying to provide any other type then we will get compile time error.
 
         while(b){
