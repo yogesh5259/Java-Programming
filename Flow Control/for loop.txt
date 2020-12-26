@@ -106,4 +106,12 @@
                      Hello
                      Hello
 
-                     
+    NOTE:-
+
+        -> All three initialization, condition and increment/decrement are optional in for loop.
+
+
+    Example 1:- 
+
+        
+
