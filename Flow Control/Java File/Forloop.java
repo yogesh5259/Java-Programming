@@ -4,8 +4,13 @@ class Forloop {
             // for(System.out.println("Hello"); i<3 ; i++){
             //     System.out.println("HI!!");
             // }
-            for( ; i<3 ; System.out.println("Hello")){
-                i++;
-            }
+            // for( ; i<3 ; System.out.println("Hello")){
+            //     i++;
+            // }
+
+            // for(; true; i++){
+            //     System.out.println("Hello");
+            // }
+            // System.out.println("Hi");
     }
 }

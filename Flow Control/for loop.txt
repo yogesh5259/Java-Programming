@@ -113,5 +113,73 @@
 
     Example 1:- 
 
-        
+        for(int i = 0; true; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
 
+        output:- compile time error:- unreachable statement
+
+    Example 2:- 
+
+        for(int i = 0; false; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
+
+        output:- compile time error:- unreachable statement
+
+    Example 3:- 
+
+        int a = 10,b = 20;
+        for(int i = 0; a < b; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
+
+        output:- Hello
+                 Hello
+                 Hello
+                 .
+                 .
+                 .
+
+    Example 4:- 
+
+        int a = 10, b = 20;
+        for(int i = 0; a > b; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
+
+        output:- Hi
+
+    Example 5:- 
+
+        final a = 10, b = 20;
+        for(int i = 0; a > b; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
+
+        output:- compile time error:- unreachable statement
+
+
+    Example 6:- 
+
+        final a = 10, b = 20;
+        for(int i = 0; a < b; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
+
+        output:- compile time error:- unreachable statement
+
+    Example 7:- 
+
+        for(int i = 0; ; i++){
+            System.out.println("Hello");
+        }
+        System.out.println("Hi");
+
+        output:- compile time error:- unreachable statement
