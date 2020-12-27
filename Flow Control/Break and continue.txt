@@ -1,0 +1,51 @@
+
+        Break
+        =====
+
+    -> We can use break at three places.
+    1. Inside switch.
+    2. Inside loop.
+    3. Inside labeled block.
+
+    1. Inside switch.
+
+        -> we use break inside switch to prevent fall-through.
+
+        switch(x){
+            case 1:
+                System.out.println(0);
+            case 2:
+                System.out.println(1);
+                break;
+            case 3:
+                System.out.println(3);
+                break;
+        }
+
+    2. Inside loop.
+
+        -> we use break inside loop to break the execution of loop.
+
+        for(int i = 0; i < 10; i++){
+            if(i == 5){
+                break;
+            }
+        }
+
+    3. Inside labeled block.
+
+        -> we can use inside labeled block to break block execution based on some condition.
+
+        int i = 5;
+        l1{
+            System.out.println("Inside block");
+            if(i == 5){
+                break;
+            }
+            System.out.println("end of block");
+        }
+
+
+    -> If we try to use other then this three places we get compile time error:- break outside switch or loops.
+
+
