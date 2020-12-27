@@ -63,6 +63,35 @@
         -> For-each is the best choice to retrieve elements of arrays and collection.
         -> but it's limitations is it is only applicable for arrays and collection.
         -> it not a general perpose loop.
-        
+        -> using for loop we can access elements only in original order but not in reverse order.
  
+
+
+        Iterable Interface
+        ==================
+
+        for(eachitem x : target){
+
+        }
+
+        -> target element should be Iterable.
+        -> introduced in 1.5 version.
+        -> contain only one method.
+
+            public Iterator iterator(){
+                return Iterator object
+            }
+
+        
+        Iterable  vs Iterator
+        ---------------------
+
+                Iterable                                iterator
+
+        ->  it is related to for each loop         -> It is related to collection. 
+        -> The target element in for loop          -> we can use to retrieve element of collection
+           is must be Iterable.                       one by one.
+        -> contain one method.                     -> contain three method
+            iterator()                                  hasNext() / next() / remove()
+        -> present in java.lang                    ->  present in java.util
 
