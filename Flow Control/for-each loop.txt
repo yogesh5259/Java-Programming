@@ -1,0 +1,68 @@
+
+
+        ** For each loop**
+        ==================
+
+    -> For - each (enhanced for loop) introduced in 1.5 version.
+    -> It is specialy designed loop to retrieve elements from arrays and collection.
+
+    Example 1:-
+        To print elements of one dimensional Array.
+
+        -> normal for loop
+
+        int[] x = {10,20,30,40};
+        for(int i = 0; i < x.length; i++){
+            System.out.println(x[i]);
+        }
+
+        -> for - each loop
+
+        int[] x = {10,20,30,40};
+        for(int x1 : x){
+            System.out.println(x1);
+        }
+
+    
+    Example 2:-
+
+        To print elements of two dimensional Array.
+
+        int[][] x = {{10,20,30}, {40,50}}
+        for(int[] x1 : x){
+            for(int x2 : x1){
+                System.out.println(x2);
+            }
+        }
+
+    Example 3:-
+
+        To print elements of three dimensional Array.
+
+        int[][][] x = {
+                        {
+                            {10,20,30},
+                            {10,20}
+                        },
+                        {
+                            {20,30,40},
+                            {10,60,70}
+                        }
+                    }
+
+
+        for(int[][] x1 : x){
+            for(int[] x2: x1){
+                for(int x3 : x2){
+                    System.out.println(x3);
+                }
+            }
+        }
+
+
+        -> For-each is the best choice to retrieve elements of arrays and collection.
+        -> but it's limitations is it is only applicable for arrays and collection.
+        -> it not a general perpose loop.
+        
+ 
+
