@@ -4,7 +4,7 @@
 
     -> We can use break at three places.
     1. Inside switch.
-    2. Inside loop.
+    2. Inside loops.
     3. Inside labeled block.
 
     1. Inside switch.
@@ -49,3 +49,39 @@
     -> If we try to use other then this three places we get compile time error:- break outside switch or loops.
 
 
+
+        ** Continue **
+        ==============
+
+        -> we can use continue at one place only.
+
+        1. Inside loops.
+
+        -> we use continue inside loops to skip current iteration and go for the next.
+        -> If we try to use continue outside loops then we will get compile time error.
+
+        Example 1:- 
+
+            for(int i = 0; i < 10; i++){
+                if(i == 5)[
+                    continue;
+                ]
+                System.out.println(i);
+            }
+
+        Example 2:- 
+
+            for(int i = 0; i < 10; i++){
+                if(i % 2 == 0){
+                    continue;
+                }
+                System.out.println(i);
+            }
+
+            output:- 1
+                     3
+                     5
+                     7
+                     9
+
+        
