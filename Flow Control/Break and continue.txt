@@ -89,8 +89,20 @@
     ** Labeled break and Continue **
     ================================
 
+    -> we can use labeled break and continue to break or continue a perticular loop in nested loops.
 
-    **Labeled break**
-    -----------------
+    l1: 
+    for( ; ;){
+        l2:
+        for(; ; ){
+            l3:
+            for(; ; ){
+                break l2;
+                or
+                continue l2;
+            }
+        }
+    }
 
-    ->
+
+    
