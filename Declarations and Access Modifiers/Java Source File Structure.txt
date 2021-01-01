@@ -1,0 +1,50 @@
+
+        Java Source File Structure
+        --------------------------
+
+    -> A Java program can contain any number of classes but at most one class can be declared as a public if there is public class then the name of the public class and name of program must be matched otherwise we will get compile time error.
+
+
+
+    Case 1:- 
+        -> If there is no public class then we can use any name for program file and there no restrictions.
+
+        -> Name of file is Yogesh.java
+
+        class A{
+
+        }
+        class B{
+
+        }
+        class c{
+
+        }
+
+    Case 2:-
+        -> If class is public then name of program file is must be match with class name. Otherwise we will get compile time error.
+
+        -> Name of file is B.java
+
+        class A{
+
+        }
+        public class B{
+
+        }
+        class c{
+
+        }
+
+    Case 3:- 
+        -> If class B and C declared as public and name of program is B.java then we will get compile time error.
+        error:- class C is public, should be declared in a file named C.java
+
+
+    -> when we are compiling a java program then for every class present in that program a seperate class path is generated.
+
+    -> we can compile a java Source file(program) but we can run a java .class file.
+
+    -> whenever we are executing a java class then the corrosponding class main method will be executed if the class does not contain main method then we will get runtime exception NoSuchMethodError : main if the corrosponding class file not found then we will get NoClassDefFoundError.
+
+    
