@@ -1,0 +1,31 @@
+
+     ** Import statement **
+     ======================
+
+
+    class Test {
+        public static void main(String[] args){
+            ArrayList list = new ArrayList();
+        }
+    }
+
+    Output:- cannot find symbol
+             symbol:   class ArrayList
+             location: class 
+
+
+    -> we can solve this problem by using fully qualified name.
+
+        java.util.ArrayList l = new java.util.ArrayList();
+
+
+    -> The problem with usage of fully qualified name every time is it increase length of code and reduce readablity.
+
+    -> we can solve this problem using import statement whenever we are writing import statement is not required to use fully qualified name every time we can use short name directly.
+
+    import java.util.ArrayList;
+    class Test {
+        public static void main(String[] args){
+            ArrayList list = new ArrayList();
+        }
+    }
