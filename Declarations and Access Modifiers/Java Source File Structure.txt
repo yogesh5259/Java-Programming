@@ -47,4 +47,4 @@
 
     -> whenever we are executing a java class then the corrosponding class main method will be executed if the class does not contain main method then we will get runtime exception NoSuchMethodError : main if the corrosponding class file not found then we will get NoClassDefFoundError.
 
-    
+    -> It is not recommended to declare multiple classes in a single source file. It is highly recommended to declare only one class per source file and we have to match source file with class name.
