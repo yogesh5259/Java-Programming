@@ -29,3 +29,14 @@
             ArrayList list = new ArrayList();
         }
     }
+
+
+        Types of import
+        ---------------
+
+    -> There are two types of import statement.
+    1. Explicit class import.
+    2. Implicit class import.
+
+    -> It is highly recommended to use Explicit class import because it improves the readablity of the code.
+
