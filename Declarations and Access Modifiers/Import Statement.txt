@@ -71,14 +71,14 @@
 
     Case 4:-
 
-            import java.util.*;
-            import java.sql.*;
-            class Test {
-                public static void main(String[] args){
-                    Date date = new Date();
-                }
+        import java.util.*;
+        import java.sql.*;
+        class Test {
+            public static void main(String[] args){
+                Date date = new Date();
             }
+        } 
 
-            output:- reference to Date is ambiguous
+        output:- reference to Date is ambiguous
 
 
