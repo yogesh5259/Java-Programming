@@ -60,6 +60,25 @@
         consider the following code
 
         class myObject extends java.rmi.UnicastRemoteObject{
-            
+
         }
+
+        -> code compile's file even though we are not writing import statement. 
+        -> because we used fully qualified name.
+
+
+    NOTE:- When ever we are using fully qualified name it is not required to write import statement.
+
+    Case 4:-
+
+            import java.util.*;
+            import java.sql.*;
+            class Test {
+                public static void main(String[] args){
+                    Date date = new Date();
+                }
+            }
+
+            output:- reference to Date is ambiguous
+
 
