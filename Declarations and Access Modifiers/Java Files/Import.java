@@ -1,4 +1,7 @@
-import java.sql.*;
+import static java.lang.Math.sqrt;
+import static java.lang.Math.*;
+
+
 import java.util.Date;
 
 public class Import {
@@ -9,6 +12,12 @@ public class Import {
 
        Date date = new Date();
        System.out.println(date.getClass().getName()); //java.util.Date
+
+
+        System.out.println(sqrt(4));
+        System.out.println(max(4,3));
+        System.out.println(random());
+
 
     }
 }
