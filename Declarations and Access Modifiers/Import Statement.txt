@@ -115,4 +115,25 @@
         4. No import required
 
 
+    Case 7:-
+        -> All classes and interfaces present in the following package are bydefault available to every java program hence we are not required to write import statement.
+
+        1. java.lang package
+        2. default package (current working directory)
+
+
+    Case 8 :-
+        -> import statement is totally compile time related concept.
+        -> if more number of imports then more will be the compile time but there is no affect on execution time (Runtime).
+
+    
+    Case 9:-
+
+        -> C language #include<stdio.h> vs java import statement.
+
+        -> In the case of c language #include all the input output header files will be loaded at the beginning only at translation time hence it is static include.
+        -> In the case of java language import 
+
+
+
 
