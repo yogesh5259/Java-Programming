@@ -101,6 +101,18 @@
             } 
 
 
+    Case 6:-
+        -> whenever we are importing a java package all classes and interfaces present in that package bydefault available but not sub package classes.
+        -> If we want to use sub package class then we should have to write import statement until sub package level.
+
+        java -> util -> regex -> pattern
+
+        -> To use pattern class in our program then which import statement is required.
+
+        1. import java.*;
+        2. import java.util.*;
+        3. import java.util.regex.*;  //valid ans
+        4. No import required
 
 
 
