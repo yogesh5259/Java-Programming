@@ -71,6 +71,7 @@
 
     Case 4:-
 
+        -> One case is Date.
         import java.util.*;
         import java.sql.*;
         class Test {
@@ -79,6 +80,27 @@
             }
         } 
 
-        output:- reference to Date is ambiguous
+        output:- compile time error:- reference to Date is ambiguous.
+
+        -> Second case is List is available in awt and util package.
+
+    
+    Case 5:- 
+        -> while resolving class names compiler will gives a precedence in the following order.
+        1. Explicit class import
+        2. Classes present in current working directory(default package)
+        3. Implicit class Import
+
+            import java.util.Date;
+            import java.sql.*;
+            class Test {
+                public static void main(String[] args){
+                    Date date = new Date(); 
+                    System.out.println(date.getClass().getName()); //java.util.Date
+                }
+            } 
+
+
+
 
 
