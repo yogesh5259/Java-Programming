@@ -76,4 +76,10 @@
 
 
 
-        
+    1. Explicit static import   
+
+        import static package name.class name.static member;
+
+    2. Implicit static import
+
+        import static package name.class name.*;
