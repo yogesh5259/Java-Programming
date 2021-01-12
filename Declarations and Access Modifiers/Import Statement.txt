@@ -139,3 +139,17 @@
 
 
     
+
+    Normal import
+    -------------
+
+
+    1. Explicit import
+
+        import package name.class name;
+
+    2. Implicit import
+        
+        import package name.*;
+
+        
