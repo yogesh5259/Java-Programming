@@ -54,5 +54,16 @@
         println() -> method available in PrintStrem class.
 
 
-        
+    case 1:-
 
+        import static java.lang.Integer.*;
+        import static java.lang.Byte.*;
+        class Test{
+            public static void main(String[] args){
+                System.out.println(MAX_VALUE);
+            }
+        }
+
+        output:- reference to MAX_VALUE is ambigious.
+
+        
