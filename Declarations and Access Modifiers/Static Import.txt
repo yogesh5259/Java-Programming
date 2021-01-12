@@ -1,0 +1,58 @@
+
+        ** Static import **
+        ===================
+
+    -> Usualy we can access static member using class name but if we use static import then we can access directly Without class name but we have to import the class.
+
+
+    * Without static import*
+    ------------------------
+
+        Class Test {
+            public static void main(String[] args){
+                System.out.println(Math.sqrt(4));
+                System.out.println(Math.max(4,3));
+                System.out.println(Math.random());
+            }
+        }
+
+    * with static import *
+    ----------------------
+        import static java.lang.Math.*;
+        Class Test {
+            public static void main(String[] args){
+                System.out.println(sqrt(4));
+                System.out.println(max(4,3));
+                System.out.println(random());
+            }
+        }
+
+
+        *IMPORTANT*
+        -----------
+
+        -> class Test {
+            static String s = "java";
+
+        }
+
+        Test.s.length();
+
+        Test -> class name 
+        s -> static variable of type String
+        -> we can access static variable using class name and we can call methods of that type.
+
+
+        -> class System {
+            static PrintStrem out;
+        }
+
+        System.out.println();
+
+        System -> class name 
+        out -> static variable of type PrintStrem.
+        println() -> method available in PrintStrem class.
+
+
+        
+
