@@ -3,7 +3,8 @@
         ===================
 
     -> Usualy we can access static member using class name but if we use static import then we can access directly Without class name but we have to import the class.
-
+    -> Ambiguity problem is common in static import.
+    -> It is more likely to having same variable name or method name in two different class.
 
     * Without static import*
     ------------------------
@@ -83,3 +84,5 @@
     2. Implicit static import
 
         import static package name.class name.*;
+
+    
