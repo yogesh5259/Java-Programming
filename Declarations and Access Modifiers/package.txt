@@ -1,0 +1,9 @@
+        ** Package **
+        =============
+
+
+    -> It is an encapsulation mechanisam to group related classes and interfaces into a single unit, which is nothing but Package.
+    
+    Example 1 :- All classes and interfaces which are required for database operations are grouped into a single Package which is nothing but java.sql Package.
+
+    
