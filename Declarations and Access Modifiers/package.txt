@@ -49,4 +49,15 @@
         Error:- class, Interface or Enum expected.
 
 
+    NOTE: structure of source file
 
+    package statement
+
+    import statement 
+
+    class / interface / Enum
+
+
+    Case 1:-
+
+        
