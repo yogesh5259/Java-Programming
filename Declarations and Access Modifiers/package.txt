@@ -2,8 +2,34 @@
         =============
 
 
-    -> It is an encapsulation mechanisam to group related classes and interfaces into a single unit, which is nothing but Package.
-    
-    Example 1 :- All classes and interfaces which are required for database operations are grouped into a single Package which is nothing but java.sql Package.
+        -> It is an encapsulation mechanisam to group related classes and interfaces into a single unit, which is nothing but Package.
+        
+        Example 1 :- All classes and interfaces which are required for database operations are grouped into a single Package which is nothing but java.sql Package.
+
+    The main advantages of Package are:-
+        -> To resolve namming conflicts (unique identification of our components).
+        -> It improves modularity of the application.
+        -> It improves maintainability of the application.
+        -> It provide security for our components.
+
+    -> Universely accepted namming convention is to use internate domain name in reverse.
 
     
+    package com.yogesh.test;
+    class Package {
+        public static void main(String[] args){
+            System.out.println("Package...");
+        }
+    }
+
+    javac Package.java
+
+    -> Generated class file placed into current working directory.
+
+
+    javac -d . Package.java
+
+    -> -d :- destination to place generated class file.
+    -> . :- means current working directory.
+    
+
