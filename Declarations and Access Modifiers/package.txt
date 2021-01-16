@@ -31,5 +31,7 @@
 
     -> -d :- destination to place generated class file.
     -> . :- means current working directory.
-    
 
+    -> If corrosponding package not allready available then this command it self will create package structure.
+
+    
