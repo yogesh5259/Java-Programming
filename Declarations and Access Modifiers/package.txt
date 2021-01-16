@@ -22,16 +22,27 @@
         }
     }
 
-    javac Package.java
+    ** javac Package.java
 
-    -> Generated class file placed into current working directory.
+        -> Generated class file placed into current working directory.
 
 
-    javac -d . Package.java
+    ** javac -d . Package.java
 
-    -> -d :- destination to place generated class file.
-    -> . :- means current working directory.
+        -> -d :- destination to place generated class file.
+        -> . :- means current working directory.
 
-    -> If corrosponding package not allready available then this command it self will create package structure.
+        -> If corrosponding package not allready available then this command it self will create package structure.
 
-    
+        -> we can take any valid directory path.
+        -> At the time of execution we have to use fully Qualified name.
+
+    **java com.yogesh.test.Package
+
+
+    Conclusion 1:-
+        -> In any java source file there can be atmost one package statement is allowded that mean more then one package is not allowded.
+
+
+    Conclusion 2:- 
+        ->
