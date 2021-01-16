@@ -45,4 +45,8 @@
 
 
     Conclusion 2:- 
-        ->
+        -> First non comment statement should be package statement otherwise we will get compile time error (If it is available).
+        Error:- class, Interface or Enum expected.
+
+
+
