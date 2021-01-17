@@ -39,9 +39,18 @@
 
 
 
-    Modifier public
-    ---------------
-    
+        Modifier public
+        ---------------
+
+    -> we class declared as a public then we can access that class form anywhere.
+
+
+        Modifier default
+        ----------------
+
+    -> If a class is declared as default then we can access that class only with in the current package that is from outside package we can't access.
+    -> default access is also known as package level access.
+
 
 
 
