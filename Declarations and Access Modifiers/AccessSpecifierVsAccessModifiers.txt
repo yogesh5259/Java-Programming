@@ -1,0 +1,23 @@
+
+
+        Access Specifier vs Access Modifiers
+        ====================================
+
+    -> public, private, protected, default are consider as specifier.
+    -> Accept above remaining are consider as modifiers.
+
+    -> But above rules is applicable in old languages like c++.
+
+    ----------------------------------
+    In java All consider as modifiers. 
+    ----------------------------------
+
+    Example
+
+        private class ClassLevelModifier {
+            public static void main(String[] args) {
+                System.out.println("Hello!!");
+            }
+        }
+
+        output:- (modifier) private not allowed here
