@@ -50,14 +50,47 @@
 
 
     NOTE: structure of source file
+    ------------------------------
 
-    package statement
+    - The following is valid java source file structure.
 
-    import statement 
+        package statement
 
-    class / interface / Enum
+        import statement 
+
+        class / interface / Enum
+
+    - Order is important.
 
 
-    Case 1:-
 
-        
+        **NOTE**
+        ========
+
+    -> Empty source file is valid java source file 
+    -> The following are valid java source file
+
+        1. 
+
+            import java.util.ArrayList;
+
+
+        2.
+            package com.java;
+
+
+        3.
+            package com.java;
+            import java.util.ArrayList;
+
+
+        4. 
+            class Test {
+                
+            } 
+
+
+    
+
+
+
