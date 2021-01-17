@@ -8,6 +8,35 @@
     -> Whether we can create object or not.
     -> Such information we will provide using access modifier.
 
-    
+    The Only applicable Modifiers for TOP LEVEL classes are.
+    --------------------------------------------------------
+    1. public
+    2. default
+    3. final
+    4. abstract
+    5. strictfp
+
+    For inner classes applicable Modifiers are.
+    -------------------------------------------
+    1. public
+    2. private
+    3. default
+    4. final
+    5. abstract
+    6. static
+    7. strictfp
+    8. protected
+
+    Case 1:-
+
+        private class ClassLevelModifier {
+            public static void main(String[] args) {
+                System.out.println("Hello!!");
+            }
+        }
+
+        output:- modifier private not allowed here
+
+
 
 
