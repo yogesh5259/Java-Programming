@@ -81,6 +81,23 @@
             compile time error:- marrie() in c cannot override marrie() in p overridden method is final.
 
 
+            final class
+            -----------
+
+                final class p {
+
+                } 
+                class c extends p{
+
+                }
+
+                compile time error:- cannot inherit from final p.
+
+            -> Every method present in final class are bydefault final.
+            -> Every variables present in final class need not be final.
+
+            
+
 
 
 

@@ -19,3 +19,11 @@
 //         System.out.println("xyz");
 //     }
 // }
+
+
+// final class p {
+
+// } 
+// class c extends p{
+
+// }
