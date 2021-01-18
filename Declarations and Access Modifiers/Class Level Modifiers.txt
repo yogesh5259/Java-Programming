@@ -40,20 +40,48 @@
 
 
         Modifier public
-        ---------------
+        ===============
 
-    -> we class declared as a public then we can access that class form anywhere.
+        -> we class declared as a public then we can access that class form anywhere.
 
 
         Modifier default
-        ----------------
+        ================
 
-    -> If a class is declared as default then we can access that class only with in the current package that is from outside package we can't access.
-    -> default access is also known as package level access.
+        -> If a class is declared as default then we can access that class only with in the current package that is from outside package we can't access.
+        -> default access is also known as package level access.
 
 
         Modifier final
-        --------------
+        ==============
+
+        -> final is the modifier applicable for classes, methods and variables.
+
+            final methods
+            -------------
+            
+            -> whatever methods parents has bydefault available to the child through inheritance.
+            -> If the child not satisfied with parent method implimentation then child is allowed to redefine that method based on his requriment this process is called overriding.
+            -> If the parent class method declared as a final then we can't override that in child class because it's implimentation is final.
+
+            class p {
+                public void property(){
+                    System.out.println("Gold");
+                }
+                public final void marrie(){
+                    System.out.println("sanju");
+                }
+            }
+            class c extends p {
+                public void marrie(){
+                    System.out.println("xyz");
+                }
+            }
+
+            compile time error:- marrie() in c cannot override marrie() in p overridden method is final.
+
+
+
 
 
 
