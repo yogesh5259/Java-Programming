@@ -96,7 +96,9 @@
             -> Every method present in final class are bydefault final.
             -> Every variables present in final class need not be final.
 
-            
+        -> The main advantage of final keyword is we can achieve security and provide unique implimentation.
+        -> Main disadvange of final keyword is we are missing key benefits of oops : Inheritance(because of final classes) and polymorphism (because of final methods).
+        -> If there is no specific requriment then it is not recommended to use final keyword.  
 
 
 
