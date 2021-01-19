@@ -102,5 +102,65 @@
 
 
 
+        abstract modifier
+        ================
+
+            -> abstract is a modifier applicable for classes and methods but not for variables.
 
 
+            abstract method
+            ---------------
+
+                -> Even though we don't about implimentation still we can declare a method with abstract modifier that is for abstract methods only declaration is available but not implimentation.
+
+                -> abstract declaration should ends with ;.
+
+                    public abstract void m1(); //valid 
+
+                    public abstract void m1(){} //compile time error
+
+                -> child class is responsible to provide implimentation for parent abstract method.
+
+                -> By declaring abstract method in the parent class we can provide guidelines to the child classes such that which method child has to implement.
+
+                -> The following are various illegal combination of modifiers for method with respect to abstract.
+
+                    1. abstract final
+                    2. abstract native
+                    3. abstract synchronised
+                    4. abstract static
+                    5. abstract private
+                    6. abstract strictfp
+
+
+            abstract class
+            --------------
+
+                -> for any java class if we are allowed to create an object(because of partial implimentation) such type of class we have to declare with abstract modifier.
+
+                -> for abstract classes instantiation is not possible.
+
+                    abstract class Test {
+                        public static void main(String[] args){
+                            Test t = new Test();
+                        }
+                    }
+
+                    compile time error:- Test is abstract can not be insantiated.
+
+                
+            abstract class vs abstract method
+            ---------------------------------
+
+                -> if a class contain atleast one abstract method then compulsory we should declare class as abstract otherwise we will get compile time error.
+
+                -> if a class contain atleast one abstract method then implimentation is not complete and hence it is not recommended to create object to restrict object instantiation compulsory we should class as abstract.
+
+                -> abstract class can contain zero number of abstract method also.
+                    1. HttpServlet class is abstract but it does not contain any abstract method.
+                    2. Every adapter is recommended to declare abstract but it does not contain any abstract method.
+
+                
+
+
+                
