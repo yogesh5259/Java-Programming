@@ -172,5 +172,19 @@
                     compile time error:- missing method body, or declare abstract
 
                 2. 
-                    
+                    class abstract Test{
+                        public abstract void m1(){}
+                    }
+
+                    compile time error:- abstract methods cannot have a body
+
+                3. 
+                    class Test{
+                        public abstract void m1();
+                    }
+
+                    compile time error:- Test is not abstract and does not override abstract method m1() in Test
+
+                
+
 

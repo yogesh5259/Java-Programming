@@ -29,6 +29,17 @@
 // }
 
 
-class Test {
-    public void m1();
+// class Test {
+//     public void m1();
+// }
+
+
+
+// class abstract Test{
+//     public abstract void m1(){}
+// }
+
+
+class Test{
+    public abstract void m1();
 }
