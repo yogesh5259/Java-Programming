@@ -35,11 +35,14 @@
 
 
 
-// class abstract Test{
+// abstract class Test{
 //     public abstract void m1(){}
 // }
 
 
-class Test{
+ abstract class Test{
+    
     public abstract void m1();
+
 }
+

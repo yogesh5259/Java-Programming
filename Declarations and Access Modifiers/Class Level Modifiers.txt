@@ -61,8 +61,8 @@
             -------------
             
             -> whatever methods parents has bydefault available to the child through inheritance.
-            -> If the child not satisfied with parent method implimentation then child is allowed to redefine that method based on his requriment this process is called overriding.
-            -> If the parent class method declared as a final then we can't override that in child class because it's implimentation is final.
+            -> If the child not satisfied with parent method implementation then child is allowed to redefine that method based on his requriment this process is called overriding.
+            -> If the parent class method declared as a final then we can't override that in child class because it's implementation is final.
 
             class p {
                 public void property(){
@@ -96,7 +96,7 @@
             -> Every method present in final class are bydefault final.
             -> Every variables present in final class need not be final.
 
-        -> The main advantage of final keyword is we can achieve security and provide unique implimentation.
+        -> The main advantage of final keyword is we can achieve security and provide unique implementation.
         -> Main disadvange of final keyword is we are missing key benefits of oops : Inheritance(because of final classes) and polymorphism (because of final methods).
         -> If there is no specific requriment then it is not recommended to use final keyword.  
 
@@ -111,7 +111,7 @@
             abstract method
             ---------------
 
-                -> Even though we don't about implimentation still we can declare a method with abstract modifier that is for abstract methods only declaration is available but not implimentation.
+                -> Even though we don't about implementation still we can declare a method with abstract modifier that is for abstract methods only declaration is available but not implementation.
 
                 -> abstract declaration should ends with ;.
 
@@ -119,7 +119,7 @@
 
                     public abstract void m1(){} //compile time error
 
-                -> child class is responsible to provide implimentation for parent abstract method.
+                -> child class is responsible to provide implementation for parent abstract method.
 
                 -> By declaring abstract method in the parent class we can provide guidelines to the child classes such that which method child has to implement.
 
@@ -136,7 +136,7 @@
             abstract class
             --------------
 
-                -> for any java class if we are allowed to create an object(because of partial implimentation) such type of class we have to declare with abstract modifier.
+                -> for any java class if we are allowed to create an object(because of partial implementation) such type of class we have to declare with abstract modifier.
 
                 -> for abstract classes instantiation is not possible.
 
@@ -154,7 +154,7 @@
 
                 -> if a class contain atleast one abstract method then compulsory we should declare class as abstract otherwise we will get compile time error.
 
-                -> if a class contain atleast one abstract method then implimentation is not complete and hence it is not recommended to create object to restrict object instantiation compulsory we should class as abstract.
+                -> if a class contain atleast one abstract method then implementation is not complete and hence it is not recommended to create object to restrict object instantiation compulsory we should class as abstract.
 
                 -> abstract class can contain zero number of abstract method also.
                     1. HttpServlet class is abstract but it does not contain any abstract method.
@@ -172,7 +172,7 @@
                     compile time error:- missing method body, or declare abstract
 
                 2. 
-                    class abstract Test{
+                    abstract class Test{
                         public abstract void m1(){}
                     }
 
@@ -188,3 +188,10 @@
                 
 
 
+            -> If we are extending abstract then each and every abstract method of parent class we should provide implementation otherwise we have to declare child class as abstract in this case next level child class is responsible to provide implementation.
+
+
+            -> for abstract method compulsory we should override in child class to provide implementation so final abstract combination is illegal combination for methods.
+
+            -> for final classes we can not create child class where as for abstract classes we should create child class to provide implementation hence final abstract combination is illegal for classes.
+            
