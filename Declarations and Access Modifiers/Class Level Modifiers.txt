@@ -78,7 +78,7 @@
                 }
             }
 
-            compile time error:- marrie() in c cannot override marrie() in p overridden method is final.
+            compile time error:- marrie() in c can not override marrie() in p overridden method is final.
 
 
             final class
@@ -91,7 +91,7 @@
 
                 }
 
-                compile time error:- cannot inherit from final p.
+                compile time error:- can not inherit from final p.
 
             -> Every method present in final class are bydefault final.
             -> Every variables present in final class need not be final.
@@ -176,7 +176,7 @@
                         public abstract void m1(){}
                     }
 
-                    compile time error:- abstract methods cannot have a body
+                    compile time error:- abstract methods can not have a body
 
                 3. 
                     class Test{
@@ -194,4 +194,12 @@
             -> for abstract method compulsory we should override in child class to provide implementation so final abstract combination is illegal combination for methods.
 
             -> for final classes we can not create child class where as for abstract classes we should create child class to provide implementation hence final abstract combination is illegal for classes.
-            
+
+
+ NOTE
+ ====
+    
+    -> abstract class can contain final method.
+    -> final class can not contain abstract method.
+    
+    -> It is highly recommended to use abstract modifier because it promote several OOPS features like inheritance and polymorphism.
