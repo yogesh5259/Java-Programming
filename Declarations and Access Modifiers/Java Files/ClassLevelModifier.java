@@ -27,3 +27,8 @@
 // class c extends p{
 
 // }
+
+
+class Test {
+    public void m1();
+}

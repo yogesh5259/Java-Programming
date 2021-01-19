@@ -161,6 +161,16 @@
                     2. Every adapter is recommended to declare abstract but it does not contain any abstract method.
 
                 
+            
+            Examples:- 
 
+                1. 
+                    class Test{
+                        public void m1();
+                    }
 
-                
+                    compile time error:- missing method body, or declare abstract
+
+                2. 
+                    
+
