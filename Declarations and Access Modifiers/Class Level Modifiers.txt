@@ -203,3 +203,24 @@
     -> final class can not contain abstract method.
     
     -> It is highly recommended to use abstract modifier because it promote several OOPS features like inheritance and polymorphism.
+
+
+
+        strictfp (strict floting point) modifier
+        ========================================
+
+        -> Introduce in 1.2 version.
+        -> usualy the result of floting point arithmatic is varied form platform to platform if we want platform independent results for foting point arithmatic then we shoud go for strictfp modifier.
+
+
+            strictfp method
+            ---------------
+
+                -> if a method declared as strictfp all floting point calculation in that method has to follow IEEE-754 standard so that we will get platform independent results.
+                 
+                 strictfp public void m1(){
+                     System.out.println(10.0/3);
+                 }
+
+                 -> abstract modifier never talks about implementation where as strictfp method always talks about implementation hence abstract strictfp combination is illegal for methods.
+
