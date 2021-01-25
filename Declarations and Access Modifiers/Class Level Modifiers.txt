@@ -224,3 +224,11 @@
 
                  -> abstract modifier never talks about implementation where as strictfp method always talks about implementation hence abstract strictfp combination is illegal for methods.
 
+
+            strictfp class
+            --------------
+
+                -> If a class declared as strictfp then every floting point calculation present in every concrete method has to follow IEEE-754 standard so that we will get platform independent result.
+                -> we can declare abstract strictfp combination for classes that is abstract strictfp combination is leggal for classes but illegal for methods.
+
+                

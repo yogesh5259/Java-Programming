@@ -40,9 +40,19 @@
 // }
 
 
- abstract class Test{
+//  abstract class Test{
     
-    public abstract void m1();
+//     public abstract void m1();
 
+// }
+
+
+class Test{
+    public static void main(String[] args) {
+        m1();
+    }
+    strictfp public static void m1(){
+        System.out.println(10.0/3);
+    }
 }
 
