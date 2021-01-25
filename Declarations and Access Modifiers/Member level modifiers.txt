@@ -1,0 +1,66 @@
+
+    Member level modifiers
+    ======================
+
+    -> Recommended modifier for data member(variable) is private.
+    -> Recommended modifier for methods is public.
+    
+        Public Members
+        --------------
+
+            -> If a member declared as public then we can access that member form any where but corrosponding class should be visible.
+            -> before checking member visibility we have to check class visibility.
+            -> If a class and method both public then only we can access that form outside package.
+
+
+        default Members
+        ---------------
+
+            -> If a member declared as default then we can access that member only with in the current package that is form out side of package we can't access.
+            -> default access is known as package level access.
+
+
+        private Members
+        ---------------
+
+            -> If a member is private then we can access that member only with in the class that is form outside of the class we can't access.
+            -> abstract method should be availabel to the child classes to provide implemetation where as private methods are availabel to the child classes hence private abstract combination is illegal for methods.
+
+
+        Protected Members [The most missunderstood modifier in java]
+        -----------------
+
+            -> If a member declared as Protected then we can access that member anywhere with in the current package but only in child classes of outside package.
+                
+                Protected = default + kids.
+
+            -> we can access Protected member with in the current package any where either by using parent reference or by using child reference but we can access protected member in outside package only in child classes and we should use child reference only that is parent reference can not be used to access protected member form outside package.
+
+            -> we can access protected member form outside only in child classes and we should use that child class reference only.
+
+                Example:- 
+                ---------   
+                    package pak1;
+                    public class A{
+                        protected void m1(){
+                            System.out.println("A");
+                        }
+                    }
+
+                    package pak2
+                    public class B extends A{
+
+                    }
+                    public class C extends B{
+                        A a = new A();
+                        a.m1();        //Invalid :- m1() has protected access in pak1.A
+
+                        B b = new B();
+                        b.m1();         // Invalid:- m1() has protected access in pak1.A
+
+                        C c = new C();
+                        c.m1();         //valid
+                    }
+
+                    -> If we want to access protected member in child then we must have to use child reference only.
+                    -> In class C we have to use C reference Only.
