@@ -134,4 +134,66 @@
                         }
 
 
+            final static variable
+            ---------------------
+
+                -> If a value of variable are not varied from object to object such type of variable not recommended as instance variable we have to declare those variable at class level by using static modifier.
+                -> In case of Static variables a single copy will be created at class level and shared by every object of that class.
+                ->  for static variable JVM always provide default values.
+
+                    class Test{
+                        static int x;
+                        public static void main(String[] args){
+                            System.out.println(x);
+                        }
+                    } 
+                
+                -> If the static variable declared as final then compolsary we have to perform initialization explicitly whether we are using or not and JVM won't provide default values. 
+
+                    class Test {
+                        final static int x; // variable x might not have been initialized.
+                    }
+                
+                RULE
+                ----
+                    -> For final static variale we have to perform initialization before class loading completion.
+                    
+                
+                The following are various places for initialization of static variable.
+                 
+                    1. At the time of declaration.
+
+                        class Test {
+                            final static int x;
+                        }
+
+                    2. Inside static block.
+
+                        class Test{
+                            final static int x;
+                            static{
+                                x = 0;
+                            }
+                        }
+
+                    These are the only valid place to perform initialization for static final variable.
+
+                        class Test {
+                            final static int x;
+                            public void m1(){
+                                x = 0; // cannot assign a value to final variable x.
+                            }
+                        }
+
+
+            final local variables
+            ---------------------
+
+                -> A variable declared inside a method, constructor or block are considered as local variable.
+
+                
+
+
+
+
 
