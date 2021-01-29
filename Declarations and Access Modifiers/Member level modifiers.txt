@@ -64,3 +64,74 @@
 
                     -> If we want to access protected member in child then we must have to use child reference only.
                     -> In class C we have to use C reference Only.
+
+
+        final Members (variables)
+        -------------
+
+            final instance variable
+            -----------------------
+             
+                -> If the value of a variable is varied from object to object such type of variables are called instance variables.
+                -> For every object a seperate copy of instance variable will be created.
+                -> For instance variable we are not required to perform initialization explicitly JVM will always provide default values.
+
+                    class Test{
+                        int x;
+                        public static void main(String[] args){
+                            Test t = new Test();
+                            System.out.println(t.x); // 0
+                        }
+                    }
+
+                -> If the instance variable declared as final then compolsary we have to perform initialization explicitly whether we are using or not and JVM won't provide default values. 
+
+                    class Test{
+                        final int x;
+                        public static void main(String[] args){
+                            Test t = new Test();
+                            System.out.println(t.x); // variable x might not have been initialized
+                        }
+                    }
+
+                RULE
+                ----
+                    -> for final instance variable compolsary we have to perform initialization before constructor completion.
+
+                The following are various places to initialization.
+
+                    1. At the time of declaration.
+
+                        class Test{
+                            final int x = 0;
+                        }
+
+                    2. Inside instance block.
+
+                        class Test {
+                            final int x;
+                            {
+                                x = 0;
+                            }
+                        }
+
+                    3. Inside constructor. 
+
+                        class Test {
+                            final int x;
+                            Test() {
+                                x = 0;
+                            }    
+                        }
+
+                    -> These are only valid place to perform initialization of final instance variables anywhere else we get compile time error.
+
+                        class Test {
+                            final int x;
+                            public static void m1() {
+                                x = 0; // cannot assign a value to final variable x
+                            }    
+                        }
+
+
+
