@@ -190,8 +190,60 @@
             ---------------------
 
                 -> A variable declared inside a method, constructor or block are considered as local variable.
+                -> These variables are created for temporary use only.
+                -> local variable are also known as temporary variable/ stack variable/ Automatic variable.
+                -> For local variable JVM won't provide any default value compolsary we should perform initialization explecitly before using that local varaible that is if we are not using then it is not required to perform initialization.
 
+                    class Test {
+                        public static void main(String[] args){
+                            int x;
+                            System.out.println("Hello"); // Hello
+                        }
+                    }
+
+                    class Test {
+                        public static void main(String[] args) {
+                            int x;
+                            System.out.println(x); //variable x might not have been initialized.
+                        }
+                    }
+
+
+                -> Even though local variable is final before using only we have to perform initialization that is if we are not using then it is not required to perform initialization even though it is final.
+
+                    class Test{
+                        public static void main(String[] args){
+                            final int x;
+                            System.out.println("Hello"); // Hello
+                        }
+                    }
                 
+                    class Test {
+                        public static void main(String[] args){
+                            final int x;
+                            System.out.println(x); // variable x might not have been initialized.
+                        }
+                    }
+
+
+                -> The only allicable modifier for local variable is final by mistake if we are trying to apply any other modifier then we will get compile time error.
+
+                    class Test{
+                        public static void main(String[] args){
+                            public int x = 0; //Illigal start of expression.
+                            private int x = 0; //Illigal start of expression.
+                            protected int x = 0; //Illigal start of expression.
+                            volatile int x = 0; //Illigal start of expression.
+                            transient int x = 0; //Illigal start of expression.
+                            static int x = 0; //Illigal start of expression.
+                        }
+                    }
+
+                ->  If we not specify any modifier then bydefault is default for instance and static variable but not for local variable.
+                -> former parameter of method access local variable of the method hence former parameter can be declared as final then with in the method we can't perform re assignment.
+
+
+
 
 
 
