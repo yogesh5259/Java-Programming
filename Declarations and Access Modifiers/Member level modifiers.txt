@@ -359,6 +359,7 @@
             -> if multiple threads trying operate simultaneously on the same java object then there may be a chance of data inconsistancy problem this is called race condition we can overcome this problem by using synchronized keyword.
             -> if a method or block declared as synchronized then at a time only one thread is allowed to execute that method or block on the given object so that data inconsistancy problem will be resolved.
             -> the main disadvantage of synchronized keyword is it increase waiting time of threads and creates performence problems hence if there a no specific requriment then it is not recommended to use synchronized keyword.
+            -> synchronized method should compolsary contain implemetation where as abstract method does npt contain any implemetation hence abstract synchronized is Illigal combination of modifiers.
             
 
 
