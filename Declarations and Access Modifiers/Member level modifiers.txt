@@ -242,6 +242,55 @@
                 ->  If we not specify any modifier then bydefault is default for instance and static variable but not for local variable.
                 -> former parameter of method access local variable of the method hence former parameter can be declared as final then with in the method we can't perform re assignment.
 
+        
+        static member
+        -------------
+            
+            -> static is a modifier applicable for methods and variable but not for classes.
+            -> we can't declare top level class with static modifier but we can declare inner class as static(such type of inner classes are called static nested classes).
+            -> In the case of instance variables for every object a seperate copy will be created but in the case of static variables a single copy will be created at class level and shared by every object of class.
+
+                class Test{
+                    static int x = 10;
+                    int y = 20;
+
+                    public static void main(String[] args){
+                        Test t1 = new Test();
+                        t1.x = 888;
+                        t1.y = 999;
+                        Test t2 = new Test();
+                        System.out.println(t2.x + "..." + t2.y); //888...20
+                    }
+                }
+            
+            -> we can't access instance members directly from static area but we can access from instance area directly.
+            -> we can access static members from both static and instance are directly.
+
+            Consider following declarations
+            -------------------------------
+
+                1. int x = 10;
+                2. static int x = 10;
+                3. public void m1(){
+                    System.out.println(x);
+                }
+                4. public static void m1(){
+                    System.out.println(x);
+                }
+
+                -> with in the same class which of the diclaration we can take simultaneously.
+
+                A. 1 & 3 //valid
+                B. 1 & 4 // non-static variable x cannot be referenced from a static area.
+                C. 2 & 3 // valid
+                D. 2 & 4 //valid
+                E. 1 & 2 // variable x is already defined in Test.
+                F. 3 & 4 // m1() is already defined in Test.
+
+            -> overloading concept is applicable for static method also including main method but JVM will always call main method with String argument.
+             
+
+
 
 
 
