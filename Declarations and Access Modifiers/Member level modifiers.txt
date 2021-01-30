@@ -243,8 +243,8 @@
                 -> former parameter of method access local variable of the method hence former parameter can be declared as final then with in the method we can't perform re assignment.
 
         
-        static member
-        -------------
+        static member (method)
+        ----------------------
             
             -> static is a modifier applicable for methods and variable but not for classes.
             -> we can't declare top level class with static modifier but we can declare inner class as static(such type of inner classes are called static nested classes).
@@ -287,9 +287,71 @@
                 E. 1 & 2 // variable x is already defined in Test.
                 F. 3 & 4 // m1() is already defined in Test.
 
-            -> overloading concept is applicable for static method also including main method but JVM will always call main method with String argument.
-             
+            Case 1:-
+            
+                -> overloading concept is applicable for static method also including main method but JVM will always call main method with String argument.
 
+                class Test{
+                    public static void main(String[] args){
+                        System.out.println("String args");
+                    }
+                    public static void main(int args){
+
+                    }
+                }
+
+                -> other overloaded method we have to call just like a normal method call.
+            
+            Case 2:
+
+                -> for static method inheritance concept is applicable including main method hence while executing child class if child does not contain main method then parent class main method will be executed.
+
+                class P {
+                    public static void main(String[] args){
+                        System.out.println("parent main");
+                    }
+                }
+                class C extends class P {
+
+                }
+
+                java P.java
+                    output:- parent main
+
+                java C.java
+                    output:- parent main
+                
+            Case 3:
+
+                class P {
+                    public static void main(String[] args){
+                        System.out.println("parent main");
+                    }
+                }
+                class C extends class P {
+                    public static void main(String[] args){
+                        System.out.println("child main");
+                    }
+                }
+
+                java P.java
+                    output:- parent main
+
+                java C.java
+                    output:- child main
+
+                -> It seems method overriding but it is not method overriding it is method hiding.
+            
+            -> for static method overloading and inheritance concept is applicable for static method but instade of method overriding method hiding concept is applicable.
+
+    
+            When to use static method and when to use instance method.
+            ----------------------------------------------------------
+
+            -> inside method implemetation if we are using at least one instance variable then that method talks about a perticular object hence we shoud declare method as instance method.
+            -> inside method implemetation if we are not using any instance variable then that method no way related to a perticular object hence we have to declare such type of method as static method irrespective of whether we are static variables or not.
+
+            
 
 
 
