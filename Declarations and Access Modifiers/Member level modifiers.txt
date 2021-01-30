@@ -351,6 +351,14 @@
             -> inside method implemetation if we are using at least one instance variable then that method talks about a perticular object hence we shoud declare method as instance method.
             -> inside method implemetation if we are not using any instance variable then that method no way related to a perticular object hence we have to declare such type of method as static method irrespective of whether we are static variables or not.
 
+
+        synchronized modifier
+        ---------------------
+
+            -> synchronized is the modofier applicable for methods and blocks but not for classes and variables.
+            -> if multiple threads trying operate simultaneously on the same java object then there may be a chance of data inconsistancy problem this is called race condition we can overcome this problem by using synchronized keyword.
+            -> if a method or block declared as synchronized then at a time only one thread is allowed to execute that method or block on the given object so that data inconsistancy problem will be resolved.
+            -> the main disadvantage of synchronized keyword is it increase waiting time of threads and creates performence problems hence if there a no specific requriment then it is not recommended to use synchronized keyword.
             
 
 
