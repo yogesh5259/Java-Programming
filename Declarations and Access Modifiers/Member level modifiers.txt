@@ -412,7 +412,19 @@
             -> At the time of serialization if we don't want to save a value of perticular variable to meet security constraint then we should declare that variable transient.
             -> At the time of serialization JVM ignore original value of transient variable and save default value of that varaible.
             -> transient means NOT TO SERIALIZE.
+
+
+        volatile modifier
+        -----------------
+
+            -> volatile is the modifier applicable only for varaible an we can't apply anywhere else.
+            -> If the value of a variable keep on changing by multiple threads then there may be a chance of data inconsistancy problem to overcome this problem by using volatile modifier.
+            -> If a variable declared as volatile then for every thread JVM will create a seperate local copy every modification is perfomed by that thread will take place on local copy so there is no effect on remaining threads.
+            -> the main advantage of volatile keyword is we can overcome data inconsistancy problem but the main disadvantage of volatile keyword is creating and maintaining a seperate copy for every thread will increases a complexity of program and decrease performance hence if there is not specific requriment then not to use it is almost deperacated modifier.
+            -> final variable means the value never changes whereas volatile varaible means that value is keep on changing hence volatile final is Illigal combination for variables.
+
             
+
 
 
 
