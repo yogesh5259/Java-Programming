@@ -358,9 +358,53 @@
             -> synchronized is the modofier applicable for methods and blocks but not for classes and variables.
             -> if multiple threads trying operate simultaneously on the same java object then there may be a chance of data inconsistancy problem this is called race condition we can overcome this problem by using synchronized keyword.
             -> if a method or block declared as synchronized then at a time only one thread is allowed to execute that method or block on the given object so that data inconsistancy problem will be resolved.
-            -> the main disadvantage of synchronized keyword is it increase waiting time of threads and creates performence problems hence if there a no specific requriment then it is not recommended to use synchronized keyword.
+            -> the main disadvantage of synchronized keyword is it increase waiting time of threads and creates performance problems hence if there a no specific requriment then it is not recommended to use synchronized keyword.
             -> synchronized method should compolsary contain implemetation where as abstract method does npt contain any implemetation hence abstract synchronized is Illigal combination of modifiers for methods.
             
+
+        native modifier
+        ---------------
+
+            -> native is the modifier applicable for methods and we can't apply anywhere else.
+            -> the methods which are implemented in non java(mostly C/C++) are called native methods or foreign methods.
+            -> The main objectives of native keyword are 
+                1. To improve performance of the system
+                2. To achieve machine level or memory level communication.
+                3. To use already existing legacy non java code.
+
+            -> sudo code to use native keyword in java
+                1. load native library.
+                2. declare native method.
+                3. invoke native method.
+
+                class Native{
+                    static{
+                        System.loadLibrary(corosponding library path); //load native library
+                    }
+                    public native void m1();
+                }
+
+                class Test{
+                    public static void main(String[] args){
+                        Native native = new Native();
+                        native.m1();
+                    }
+                }
+            
+            -> for native methods implementation is already available in old languages like c or c++ and we are not responsible to provide implementation hence native method declaration should ends with ;.
+
+                public native void m1(); //valid 
+                public native void m1(){} // invalid :- native method cannot have a body.
+
+            -> for native methods implementation is already available in old languages but for abstract method implementation is not already availabel hence native abstract combination is illegal.
+            -> we can't declare native method as strictfp because there is no guarantee that old languages follow IEEE-754 standard hence native strictfp combination is Illigal combination for methods.
+
+            NOTE
+            ----
+                -> the main advantage of native keyword is performance is improved but the main disadvantage of native keyword is that it break platform independence of java.
+                
+
+
 
 
 
