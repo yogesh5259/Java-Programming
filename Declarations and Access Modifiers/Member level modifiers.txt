@@ -402,8 +402,17 @@
             NOTE
             ----
                 -> the main advantage of native keyword is performance is improved but the main disadvantage of native keyword is that it break platform independence of java.
-                
 
+
+        transient modifier
+        ------------------
+
+            -> transient is the modifier applicable only for variables.
+            -> we can use transient keyword in serialization context.
+            -> At the time of serialization if we don't want to save a value of perticular variable to meet security constraint then we should declare that variable transient.
+            -> At the time of serialization JVM ignore original value of transient variable and save default value of that varaible.
+            -> transient means NOT TO SERIALIZE.
+            
 
 
 

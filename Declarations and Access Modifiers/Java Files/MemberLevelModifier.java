@@ -5,8 +5,10 @@ class Test {
     //     x = 10;
     // }
 
-    final static int x;
-    static {
-        x = 0;
-    }
+    // final static int x;
+    // static {
+    //     x = 0;
+    // }
+
+    //transient int x = 20;
 }
