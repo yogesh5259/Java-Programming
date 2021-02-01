@@ -1,0 +1,31 @@
+
+            Modifiers Summary
+            =================
+
+    Modifiers                  Classes                 Methods         variables       blocks                  interfaces                               Enum                   constructor
+                     outer Class   inner Class                                                     outer interface     inner interface        outer Enum     inner Enum
+
+    public              ✔︎              ✔︎                  ✔︎                ✔︎                           ✔︎                     ✔︎                                                      ✔︎
+
+    private                            ✔︎                  ✔︎                ✔︎                                                 ✔︎                                                      ✔︎
+
+    protected                          ✔︎                  ✔︎                ✔︎                                                 ✔︎                                                      ✔︎
+
+    default             ✔︎              ✔︎                  ✔︎                ✔︎                            ✔︎                    ✔︎                                                      ✔︎
+
+    final               ✔︎              ✔︎                  ✔︎                ✔︎                            
+
+    abstract            ✔︎              ✔︎                  ✔︎                                             ✔︎                    ✔︎
+
+    static                             ✔︎                  ✔︎                ✔︎             ✔︎
+
+    synchronized                                          ✔︎                              ✔︎
+
+    strictfp            ✔︎              ✔︎                  ✔︎                                             ✔︎                     ✔︎
+
+    native                                                ✔︎                
+
+    transient                                                              ✔︎
+
+    volatile                                                               ✔︎
+          
