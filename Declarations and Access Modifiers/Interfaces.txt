@@ -18,4 +18,34 @@
     10. Differences between Interfaces and abstract class
 
 
-    
+        Introduction
+        ------------
+
+            definition 1:-
+            
+                -> Any service requirement specification(SRS) considered as interface.
+                
+                Example 1:-
+                    -> JDBC API access requirement specification to develope database driver.
+                    -> database vender is responsible to implement this JDBC API.
+
+                Example 2:-
+                    -> Servlet API access requirement specification to develope web server.
+                    -> web server vender is responsible to implement Servlet API.
+            
+            definition 2:-
+
+                -> from client point of view an interface defines the set set of services what he is expecting.
+                -> form service provider point of view an interface defines the set of service what he is offering.
+                -> Any contract between client and service provider is considered as an interface.
+
+                Example :-
+                    -> Through bank ATM GUI screen bank people highlighting the set of services what they are offering at the same time the same GUI screen represent the set of services what customer is expecting hence this GUI screen access contract between customer and bank people.
+
+
+            definition 3:-
+
+                -> Inside interface every method is always abstract whether we are declaring or not hence interface is considered as 100% pure abstract class.
+
+            -> Any service requirement specification or any contract between client and service provider or 100% pure abstract class is nothing but interface.
+            
