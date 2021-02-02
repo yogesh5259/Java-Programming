@@ -48,4 +48,30 @@
                 -> Inside interface every method is always abstract whether we are declaring or not hence interface is considered as 100% pure abstract class.
 
             -> Any service requirement specification or any contract between client and service provider or 100% pure abstract class is nothing but interface.
-            
+
+
+        Interface declaration and implementation
+        ----------------------------------------
+
+            -> whenever we are implementing an interface for each and every method of that interface we have to provide implementation otherwise we have to declare class as abstract then next level child class is responsible to provide implementation.
+            -> every interface method is always public and abstract whether we are declaring or not hence whenever we are implementing interface then compolsary we have to declare every method as public otherwise we will get compile time error.
+
+            Example:-
+
+                Interface Interf{
+                    void m1();
+
+                    void m2();
+                } 
+                abstract class ServiceProvider implements Interf{
+                    public void m1(){
+
+                    }
+                }
+                class SubServiceProvider extends ServiceProvider{
+                    public void m2(){
+                        
+                    }
+                }
+
+
