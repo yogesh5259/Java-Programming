@@ -1,0 +1,21 @@
+
+
+            Interfaces
+            ==========
+
+
+    1. Introduction
+    2. Interface declaration and implementation
+    3. extends vs implements
+    4. Interface methods
+    5. Interface variables
+    6. Interface naming conflicts 
+        - method naming conflicts
+        - variable naming conflicts
+    7. Marker Interfaces
+    8. Adapter classes
+    9. Interface vs abstract class vs concrete class
+    10. Differences between Interfaces and abstract class
+
+
+    
