@@ -5,23 +5,23 @@
     Modifiers                  Classes                 Methods         variables       blocks                  interfaces                               Enum                   constructor
                      outer Class   inner Class                                                     outer interface     inner interface        outer Enum     inner Enum
 
-    public              ✔︎              ✔︎                  ✔︎                ✔︎                           ✔︎                     ✔︎                                                      ✔︎
+    public              ✔︎              ✔︎                  ✔︎                ✔︎                           ✔︎                     ✔︎                   ✔︎              ✔︎                  ✔︎
 
-    private                            ✔︎                  ✔︎                ✔︎                                                 ✔︎                                                      ✔︎
+    private                            ✔︎                  ✔︎                ✔︎                                                 ✔︎                                  ✔︎                  ✔︎
 
-    protected                          ✔︎                  ✔︎                ✔︎                                                 ✔︎                                                      ✔︎
+    protected                          ✔︎                  ✔︎                ✔︎                                                 ✔︎                                  ✔︎                  ✔︎
 
-    default             ✔︎              ✔︎                  ✔︎                ✔︎                            ✔︎                    ✔︎                                                      ✔︎
+    default             ✔︎              ✔︎                  ✔︎                ✔︎                            ✔︎                    ✔︎                   ✔︎              ✔︎                  ✔︎
 
     final               ✔︎              ✔︎                  ✔︎                ✔︎                            
 
     abstract            ✔︎              ✔︎                  ✔︎                                             ✔︎                    ✔︎
 
-    static                             ✔︎                  ✔︎                ✔︎             ✔︎
+    static                             ✔︎                  ✔︎                ✔︎             ✔︎                                                                      ✔︎
 
     synchronized                                          ✔︎                              ✔︎
 
-    strictfp            ✔︎              ✔︎                  ✔︎                                             ✔︎                     ✔︎
+    strictfp            ✔︎              ✔︎                  ✔︎                                             ✔︎                     ✔︎                  ✔︎              ✔︎
 
     native                                                ✔︎                
 
@@ -29,3 +29,5 @@
 
     volatile                                                               ✔︎
           
+
+        -> 
