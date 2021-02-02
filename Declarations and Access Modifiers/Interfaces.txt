@@ -70,8 +70,60 @@
                 }
                 class SubServiceProvider extends ServiceProvider{
                     public void m2(){
-                        
+
                     }
                 }
+        
+        extends vs implements
+        ---------------------
+
+            -> A class can extend only one class at a time.
+            -> An interface can extend any number of interface simelteneously.
+
+                interface A {
+
+                }
+
+                interface B {
+
+                }
+
+                interface C extends A,B{
+
+                }
+
+            -> A class can implement any number of interface simelteneously.
+            -> A class can extend another class and can implement any number of Interfaces simelteneously.
+
+                class A extends B implements C,D,E{
+
+                }
+
+            Which of the following is valid?
+            
+            1. A class can extend any number of classes at a time. //Invalid
+            2. A class can implement only one interface at a time. //Invalid
+            3. An interface can extend only one interface at a time. //Invalid
+            4. An interface can implement any number of interfaces simelteneously. //Invalid
+            5. A class can extend another class or can implement an interface but not both simelteneously. //Invalid
+            6. none of the above //true
+
+            1. x extends y
+            -> Both x any y can be either classes or an interfaces.
+            
+            2. x extends y,z
+            -> x,y,z should be interfaces.
+
+            3. x implements y,z
+            -> x should be class.
+            -> y, z should be interfaces.
+
+            4. x extends y implements z
+            -> x, y should be classes.
+            -> z should be interface.
+
+            5. x implements y extends z
+            -> compile time error.
+            ->because we have to take extends first followed by interface.
 
 
