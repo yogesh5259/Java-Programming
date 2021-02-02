@@ -30,4 +30,10 @@
     volatile                                                               ✔︎
           
 
-        -> 
+        -> the only applicable modifier for local variable is final.
+        -> the only applicable modifier for constructors are public,private,protected,default.
+        -> the modifier which is applicable only for methods is native.
+        -> the Modifiers which are applicable only for variables are transient and volatile.
+        -> the modifier which are applicable for classes but not for interfaces is final.
+        -> the Modifiers which are applicable for classes but not for Enum are final and abstract.
+        
