@@ -222,23 +222,78 @@
 
             -> Inside implementation class we can access interface variables but we can't modify values.
 
-            interface Interf {
-                int x = 10;
-            } 
+                interface Interf {
+                    int x = 10;
+                } 
 
-            class TestOne implements Interf{
-                public static void main(String[] args){
-                    x = 888;
-                    System.out.println(x); //compile time error
+                class TestOne implements Interf{
+                    public static void main(String[] args){
+                        x = 888;
+                        System.out.println(x); //compile time error
+                    }
                 }
-            }
 
-            class TestTwo implements Interf{
-                public static void main(String[] args){
-                    int x = 888;
-                    System.out.println(x); // 888
+                class TestTwo implements Interf{
+                    public static void main(String[] args){
+                        int x = 888;
+                        System.out.println(x); // 888
+                    }
                 }
-            }
+        
+        Interface naming conflicts
+        --------------------------
+
+            method naming conflicts
+            -----------------------
+
+                Case 1:-
+
+                    -> If two interfaces contains a method with same signature and same return type then in the implementation class we have to provide implementation for only one method.
+
+                        interface left {        interface right{
+                            void m1();              void m1();
+                        }                       }
+
+                        class Test {
+                            public void m1(){
+
+                            }
+                        }
+                
+                Case 2:-
+
+                    -> If two interfaces contains a method with a same name but different argument types then in the implimentaion class we have to provide implementation for both methods and this method access overloaded methods.
+
+                        interface left {        interface right{
+                            void m1();              void m1(int i);
+                        }                       }
+
+                        class Test {
+                            public void m1(){
+
+                            }
+                            public void m1(int i){
+
+                            }
+                        }
+
+                Case 3:-
+
+                    -> If two interfaces contains a method with same signature but different return type then it is impossible to implement both interfaces simelteneously(if return types are not covarient).
+                        interface left {        interface right{
+                            void m1();              int m1();
+                        }                       }
+
+                    -> we can't write any java class which implements both interfaces simelteneously.
+
+                Is a java class can implement any number of interface simelteneously.
+                    -> If two interfaces contains a method with a same signature but different return types then it is impossible to implement both interfaces simelteneously.
+
+                   
+            
+
+            
+        
 
 
             
