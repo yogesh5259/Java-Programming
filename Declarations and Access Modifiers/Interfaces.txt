@@ -127,3 +127,50 @@
             ->because we have to take extends first followed by interface.
 
 
+        Interface methods
+        -----------------
+
+            -> Every method present inside interface is always public and abstract whether we are declaring or not.
+
+            interface interf{
+                void m1();
+            }
+
+            why every method is public?
+                -> To make this method available to every implementation class.
+            
+            why every method is abstract?
+                -> implementation class is responsible to provide implementation.
+
+            The following method declaration are equal.
+                -> void m1();
+                -> public void m1();
+                -> public abstract void m1();
+                -> abstract void m1();
+            
+
+            -> we can't declare interface method with the following modifiers.
+                1. private 
+                2. protected
+                3. static
+                4. strictfp
+                5. synchronized
+                6. final
+                7. native
+            
+            -> which of the following method declarations are allowed inside interface?
+
+                1. public void m1(){} //Invalid
+                2. private void m1(); //Invalid
+                3. protected void m1(); //Invalid
+                4. static void m1(); //Invalid
+                5. public abstract native void m1(); //Invalid
+                6. abstract public void m1(); //valid
+
+        Interface variables
+        -------------------
+            ->
+            
+            
+
+
