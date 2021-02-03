@@ -3,7 +3,7 @@ interface Interf{
 
     void m2();
 }
-public abstract class ServiceProvider implements Interf {
+ abstract class ServiceProvider implements Interf {
     public void m1(){
 
     }

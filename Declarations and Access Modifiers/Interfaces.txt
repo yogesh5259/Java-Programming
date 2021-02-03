@@ -169,7 +169,79 @@
 
         Interface variables
         -------------------
-            ->
+            -> An interface can contain variables the main purpose of interface variable is to define requirement level constants.
+            -> Every interface variable is always public static final whether we are declaring or not.
+            
+            interface Interf{
+                int x = 10;
+            }
+            
+            why interface variable is public?
+                -> To make this variable available to every implementation class.
+
+            why interface variable is static?
+                -> without existing object it can be available.
+            
+            why interface variable is final?
+                -> Every implementation classes have access to this variable if any implementation change this variable then it will affect all the remaining implementation classes that is why it is final.
+
+            Inside interface the following variable declaration are equal.
+                1. int x = 10;
+                2. public int x =10;
+                3. static int x =10;
+                4. public static int x =10;
+                5. final x = 10;
+                6. public final int x = 10;
+                7. public static final int x =10;
+                8. static final int x =10;
+
+            -> As every interface variable is always public static final we can't declare with the following modifiers.
+                1. private 
+                2. protected
+                3. transient
+                4. volatile
+
+            -> for interface variable compolsary we should perform initialisation at the time of declaration otherwise we will get compile time error.
+                interface Interf {
+                    int x; // = expected
+                }
+                interface Interf {
+                    int x = ; // Illigal start of expression
+                }
+                interface Interf {
+                    int x = 10; // valid
+                }
+
+            -> Inside interface which of the following variable declaration is allowed.
+                1. int x;   //Invalid
+                2. private int x = 10; //Invalid
+                3. protected int x = 10; //Invalid
+                4. volatile int x = 10; //Invalid
+                5. transient int x = 10; //Invalid
+                6. public static int x = 10; //Valid
+
+            -> Inside implementation class we can access interface variables but we can't modify values.
+
+            interface Interf {
+                int x = 10;
+            } 
+
+            class TestOne implements Interf{
+                public static void main(String[] args){
+                    x = 888;
+                    System.out.println(x); //compile time error
+                }
+            }
+
+            class TestTwo implements Interf{
+                public static void main(String[] args){
+                    int x = 888;
+                    System.out.println(x); // 888
+                }
+            }
+
+
+            
             
             
 
