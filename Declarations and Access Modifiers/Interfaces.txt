@@ -289,7 +289,31 @@
                 Is a java class can implement any number of interface simelteneously.
                     -> If two interfaces contains a method with a same signature but different return types then it is impossible to implement both interfaces simelteneously.
 
-                   
+
+            Interface variable naming conflicts
+            -----------------------------------
+
+                    interface left {        interface right{
+                        int x = 10              int x = 10;
+                    }                       }
+
+                    class Test {
+                        public static void main(String[] args){
+                            System.out.println(x); // compile time error :- reference to x is ambiguious
+                        }
+                    }
+            
+                -> Two interfaces can contain variable with same name but there may be a variable naming conflict but we can solve this problem by using interface names.
+
+                    interface left {        interface right{
+                        int x = 10              int x = 10;
+                    }                       }
+
+                    class Test {
+                        public static void main(String[] args){
+                            System.out.println(left.x); // 10
+                        }
+                    }
             
 
             
