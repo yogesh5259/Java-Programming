@@ -315,6 +315,37 @@
                         }
                     }
             
+            Marker Interface
+            ----------------
+                -> If an interface does't contain any methods and by implimenting that interface if our object get some ability such type of interfaces are called marker interfaces (ability interface / tag interface).
+
+                Example:- 
+                    1. Serializable
+                    2. Cloneable
+                    3. randomAccess
+                    4. SingleThreaedModel
+
+                    -> This are marked for some ability.
+
+                Example 1 :- 
+                    -> By implementing Serializable interface our object can be saved to file and can travel accross the network.
+
+                Example 2:- 
+                    -> By implementation a cloneable interface our objects are in a position to produce exectly duplicate cloned objects.
+
+                Without having any methods how the object get some ability in the marker interfaces?
+                    -> Internally JVM is responsible to provide required ability.
+
+                Why JVM is providing required ability in marker interfaces?
+                    -> To reduce complexity of programming and to make java language as simple.
+                
+                Can we create our own marker interface?
+                    -> Yes, but customization of JVM is required.
+
+                
+                
+
+            
 
             
         
