@@ -442,7 +442,45 @@
             -> Inside interface we can't declare constructors.              -> Inside abstract class we can declare constructors.
 
 
-         
+        Abstract class loopholes
+        ------------------------
+
+            1. we can't create object of abstract class but abstract class can contain abstract class what is the need?
+                -> abstract class constructor will be executed whenever we are creating child class object to perform initialisation of child class object only.
+            
+            -> Either directly or indirectly we can't create object for abstract class.
+            
+            2. we can't create object for interface and abstract class but abstract class can contain constructor and interface does't contain constructor why?
+                -> The main purpose of constructor is to perform initialisation for instance variables 
+                -> abstract class can contain instance variables which are required for child object.
+                -> To perform initialisation of those instance variables constructor is required for abstract class.
+                -> Every variable present inside interface are public static final whether we are declaring or not there is no chance of existing instance variable inside interface hence constructor are not required interface.
+            
+            -> whenever we are creating child class object parent object wan't be created just parent class constructor will be executed for the child object purpose only.
+            -> proof.java
+
+        Is it possible to replace interface with abstract class?
+        -> we can replace interface with abstract class but it is not a good programming practice.
+        -> This something like recruting IAS officer for swiping activity.
+        -> If every thing is abstract then it is highly recommended to go for interface.
+
+        interface a {                                   abstract class a{
+
+        }                                               }      
+        
+        class Test implements a {                       class Test extends a {
+
+        }                                               }
+
+        -> while implementing interface                 -> while exending abstract class then extending 
+           we can extend other class                       another class is not possible hence we are missing
+           hence we won't miss any inheritance             inheritance benefits.
+           benefits.
+
+        -> object creation is not costly.                -> object creation is costly.
+
+
+
 
 
 
