@@ -392,8 +392,59 @@
         NOTE:-
         ------
             -> marker interface and Adapter classes simplify complexity of programming and these are best utilities to the programmer and programmers life will become simple.
+
+
+        Interface vs Abstract class vs concrete class
+        ---------------------------------------------
+
+            Interface :- If we don't know any thing about implimentaion just we have requirement specification then we should go for interface.
+                Example:- Servlet
             
-                
+            Abstract class :- If we are talking about implementation but not completely partial implementation then we should go for abstract class.
+                Example:- GenericServlet, HttpServlet
+            
+            concrete class :- If we are talking about implemetation completely and ready to provide service then we should go for concrete class.
+                Example:- myOwnServlet
+
+        Differences between interface and abstract class
+        ------------------------------------------------
+
+                            Interface                                                                       Abstract class
+            
+            -> If we don't know anything about implementation               -> If we are talking about implementation but not completely(partial)
+            and just we have requirement specification then                     then we should go for abstract class.
+            we should go for Interface.
+
+            -> Inside interface every method is public and                  -> Every method inside abstract class need not be public and abstract
+            abstract whether we are declaring or not hence                      also we can take concrete method.
+            interface considered as pure abstract class.
+
+            -> As every interface method is public and abstract             -> There are no restrictions on abstract class method modifiers.
+            hence we can't declare with the following modifiers
+            private, protected, final, static, synchronized,
+            native and strictfp.
+
+            -> Every variable present inside interface is                   -> Every variable present inside abstract class need not be public 
+            always public static final whether we are declaring                 static final.
+            or not.
+
+            -> As every interface variable is always public static          -> There are no restrictions on abstract class variable modifiers.
+            final we can't declare with the following modifiers
+            private, protected, transient, volatile.
+
+            -> For interface variable compolsary we should perform          -> For abstract class variables we are not required to perform initialisation 
+            initialisation at the time of declaration only otherwise            at the time of declaration.
+            we will get compile time error.
+
+            -> Inside interface we can't declare static and instance        -> Inside abstract class we can declare static and instance blocks.
+            blocks.
+
+            -> Inside interface we can't declare constructors.              -> Inside abstract class we can declare constructors.
+
+
+         
+
+
 
             
 
