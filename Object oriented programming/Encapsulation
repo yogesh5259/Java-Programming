@@ -1,0 +1,15 @@
+        Encapsulation
+        =============
+
+    -> The process of binding data members and corrosponding methods into a single unit is nothing but encapsulation.
+
+        class Student{
+            data members + methods (behaviours)
+        }
+
+    -> If any component follows data hiding and abstaction such type of component is said to be encapsulated component.
+
+    -> Advantages of the encapsulation are we can achieve security, Enhancement will become easy, it improve maintainabilty of the applications.
+    -> The main disadvantage of encapsulation is it increases length of the code and slows down execution.
+
+    
