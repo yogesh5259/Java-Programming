@@ -1,0 +1,39 @@
+        Tightly Encapsulated class
+        ==========================
+    
+    -> A class is said to be tightly encapsulated if an only if each and every variable declared as private.
+    -> Whether class contains corrosponding getter and setter methods are not Whethers this method are declared as public or not this things we are not required to check.
+
+        public class Account {
+            private double balance;
+
+            public double getBalance(){
+
+            }
+        }
+    
+    -> Which of following classes are tightly encapsulated class.
+        Example 1:-
+
+            class A {
+                private int x = 10; //tightly encapsulated
+            }
+            class B extends A {
+                int y = 10;
+            }
+            class C extends A {
+                private int z = 10; //tightly encapsulated
+            }
+
+        Example 2:-
+
+            class A {
+                int x = 10;     // not tightly encapsulated
+            }
+            class B extends A {
+                private int y = 20; // not tightly encapsulated
+            }
+            class C extends B {
+                private int z = 30; // not tightly encapsulated
+            }
+    -> If the parent classes not tightly encapsulated then no child class is tightly encapsulated.
