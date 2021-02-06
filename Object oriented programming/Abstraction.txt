@@ -1,0 +1,21 @@
+        Abstraction
+        ===========
+
+    -> Hiding internal implementation and just highlight the set of services what we are offering is a concept of abstraction.
+
+    Example:- Through bank ATM GUI screen bank people highlight the set of services what they are offering with highlight internal implementation.
+
+    -> The main advantages of abstarction are 
+        1. security
+            -> We are not highlight our internal implementation.
+        
+        2. maintanability
+            -> maintanability of the application will become easy.
+
+        3. Enhancement is easy
+            -> without affecting end user we can able to perform any type of changes in our internal system. 
+
+        4. Easyness
+            -> Without knowing internal implementation client can use our set of services.
+
+    -> By using interfaces and abstract classes we can implment abstarction.
