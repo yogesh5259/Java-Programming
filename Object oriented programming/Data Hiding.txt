@@ -1,0 +1,23 @@
+        Data Hiding
+        ===========
+
+    -> Outside person can't access our internal data directly or our internal data should not go out directly this object oriented feature is nothing but data hiding.
+    -> After validation/Authentication outside person can access our internal data.
+
+        Example:- After providing our user name and password we can able to access our gmail inbox information.
+
+    -> By declaring data member(variable) as private we can achieve data hiding.
+
+        public class Account{
+            private double balance;
+
+            public double getBalance(){
+                //validation
+                return balance;
+            }
+        }
+
+    NOTE
+    ----
+        -> It is highly recommended to declare data member as private.
+        
