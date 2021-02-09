@@ -76,4 +76,38 @@
         -> If our class extend any other class then our class is indirect child of object.
         -> Either direct or indirectly java won't provide support for inheritance with respect to classes.
     
+    Why java won't provide support for multiple inheritance?
+        -> There may be a chance of ambiguity problem hence java won't provide support for inheritance.
+    
+    Why java interface is provide support for multiple inheritance?
+        -> Even thougth multiple method declaration is available but implementaion is unique hence there is no chance of ambiguity problem in interface.
+
+    NOTE
+    ----
+        -> stricly speaking through interface we won't get inheritance.
+
+    Cyclic Inheritance
+    ------------------
+
+        -> Cyclic inheritance is not allowed in java ofcourse it is not required.
+
+    Example 1:-
+
+        class A extends A{
+
+        } 
+        compile time error:- the type A cannot extend/implement itself or one of its own member types
+
+    Example 2:-
+
+        class A extends B {
+
+        }
+        
+        class B extends A {
+
+        }
+        compile time error:- the type A cannot extend/implement itself or one of its own member types
+
+
     
