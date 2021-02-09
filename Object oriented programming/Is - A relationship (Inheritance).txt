@@ -60,4 +60,20 @@
 
     -> Throwable class defines the most common methods which are required for every exception and error classes hence this class access root for java exception hierarchy.
 
+
+    Multiple Inheritance
+    --------------------
+
+        -> A java class can't extend more then one class at a time hence java won't provide support for multiple inheritance in classes.
+
+            class A extends C,D{
+
+            }
+
+            output:- Compile time error.
+
+        -> If our class does't extend any other class then only our class is direct child class of object.
+        -> If our class extend any other class then our class is indirect child of object.
+        -> Either direct or indirectly java won't provide support for inheritance with respect to classes.
+    
     
