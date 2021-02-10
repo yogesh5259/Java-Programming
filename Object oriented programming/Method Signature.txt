@@ -1,0 +1,58 @@
+        
+        Method Signature
+        ================
+    
+    -> In java method signature consist of method names followed by argument types.
+
+        Example:- 
+
+            public static int m1(int i, float f){
+
+            }
+
+            signature :- m1(int, float)
+        
+    -> Return type is not part of method signature in java.
+
+    -> Compiler will use method signature to resolve method calls.
+
+        
+        class Test {
+            public void m1(int i) {
+
+            }
+            public void m1(String s){
+
+            }
+        }
+
+        class main{
+            public static void main(String args){
+                Test t = new Test();
+                t.m1(10);
+                t.m1("Yogesh");
+                t.m1(10.5); //compile time error:- cannot find symbol method m1(double)
+            }
+        }
+
+    
+    -> With in a class two method with a same signature not allowed.
+
+
+        class Test {
+            public void m1(int i) {
+
+            }
+            public int m1(int x){
+                return 10;
+            }
+        }
+
+        class main{
+            public static void main(String args){
+                Test t = new Test();
+                t.m1(10); // compile time error:- method m1(int) is already defined in class test
+            }
+        }
+    
+    
