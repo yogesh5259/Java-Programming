@@ -1,0 +1,46 @@
+
+        Method Overloading
+        ==================
+    
+    -> Two methods are said to be overloaded if and only if both methods having same name but different argument types.
+    
+    -> In c language method overloading concept is not available hence we can't declare multiple methods with the same name but different arguments type if there a change in argument type compulsary we should go for new mwthod name which increases complexity of programming.
+
+        abs(int i)
+        labs(long l)
+        fabs(float f)
+    
+    -> In java we can declare multiple methods with same name but different argument types asuch type of methods are called overloaded methods.
+
+        abs(int i)
+        abs(long l)
+        abs(float f)
+    
+    -> Having overloading concept in java reduces complexity of programming.
+
+        class Test{
+            public void m1(){
+                System.out.println("no - arg");
+            }
+            public void m1(int i){
+                System.out.println("int arg");
+            }
+            public void m1(double d){
+                System.out.println("double arg");
+            }
+        }
+
+        class main{
+            public static void main(String[] args){
+                Test t = new Test();
+                t.m1();
+                t.m1(10);
+                t.m1(10.5);
+            }
+        }
+
+    -> In overloading method resolutin always takes care by compiler based on reference types hence overloading is also considered as compile time polymorphism or static polymorphism or early binding.
+    
+
+
+
