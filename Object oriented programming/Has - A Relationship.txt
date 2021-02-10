@@ -1,0 +1,41 @@
+
+        Has - A Relationship
+        ====================
+    
+    -> Has - A relationship is also known as composition or aggregation.
+    -> There is no specific keyword to implement has - a relation but most of the times we are depending on new keyword.
+    -> The main advantage of has a relationship is reusability of the code.
+
+    Example:-
+
+        class Engine{
+            //engine specific functionality
+        }
+
+        class Car {
+            Engine e = new Engine();
+        } 
+
+        -> Car has - a engine reference.
+    
+    Difference between composition and aggregation.
+    -----------------------------------------------
+
+        -> Without existing cotainer object if there is no chance of existing contained objects then container and contained objects are strogly associated and this strong association is nothing but composition.
+        -> university contain several department without existing university there is no chance of existing department so department and university is strogly associated and this strong association is nothing but composition.
+
+        -> Without existing container object if there is chance of existing contained object then container and contained objects are weekly associated and this week association is nothing but aggregation.
+        -> Department consist of several proffesers without existing department there may be a chance of existing proffesers hence department and proffesers objects are weekly associated and this week association is nothing but aggregation.
+
+    
+    NOTE
+    ----
+        -> In composition objects are strongly associated whereas in aggregation objects are weekly associated.
+        -> In composition container object holds directly contained objects whereas in aggregation container object holds just references of contained objects.
+
+    IS - A vs Has - A
+    -----------------
+        -> If we want total functionality of the class automatically then we should go for Is - A relationship.
+
+        -> If we want part of the functionality then we should go for Has - A relationship.
+
