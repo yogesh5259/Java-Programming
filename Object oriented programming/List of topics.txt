@@ -9,8 +9,8 @@
         5. Is - A relationship (Inheritance)
         6. Has - A relationship
         7. Method Signature
-        8. Overloading
-        9. Overridding 
+        8. Method Overloading
+        9. Method Overridding 
         10. Static control flow
         11. Instance control flow
         12. Constructors
