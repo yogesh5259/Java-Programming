@@ -41,6 +41,50 @@
 
     -> In overloading method resolutin always takes care by compiler based on reference types hence overloading is also considered as compile time polymorphism or static polymorphism or early binding.
     
+    -> In overloading exact match will get chance first above all.
+
+    Case 1:- Automatic promotion in overloading
+
+        class Test {
+            public void m1(int i){
+                System.out.println("int arg");
+            }
+            public void m1(float f){
+                System.out.println("float arg");
+            }
+        }
+
+        public class main{
+            public static void main(String[] args){
+                Test t = new Test();
+                t.m1(10);   //int arg
+                t.m1(10.5f); //float arg
+                t.m1('a'); // int arg       (char is promoted to int)
+                t.m1(100l); //float arg     (long is promoted to float)
+                t.m1(10.6); //compile time error:- no suitable method found for m1(double)
+            }
+        }
+
+    Case 2:- 
+
+        class Test {
+            public void m1(Object o){
+                System.out.println("object version");
+            }
+            public void m1(String s){
+                System.out.println("String version");
+            }
+        }
+
+        public class main{
+            public static void main(String[] args){
+                Test t = new Test();
+                t.m1(new Object());
+                t.m1("yogesh");
+                t.m1(null);
+            }
+        }
+
 
 
 
