@@ -87,6 +87,7 @@
         }
     
     Case 3:-
+        -> If there is no relationship beetween two parameter and both method match the argument then compiler rise error.
 
         class Test {
             public void m1(StringBuffer sb){
@@ -106,6 +107,9 @@
             }
         }
 
+    Case 4:- 
+
+        
 
 
 
