@@ -109,6 +109,8 @@
 
     Case 4:- 
         -> If there is fight between new and old then old will always win in java.
+        -> vararg method is always get least priority.
+
 
         class Test {
             public void m1(int i){
@@ -128,6 +130,63 @@
             }
         }
 
+    Case 5:- 
 
+        -> If both method match then we will get compile time error. 
+
+        class Test {
+            public void m1(int i, float f){
+                System.out.println("int - float arg");
+            }
+            public void m1(float f, int i){
+                System.out.println("float - int arg");
+            }
+        }
+
+        public class main{
+            public static void main(String[] args){
+                Test t = new Test();
+                t.m1(10,10.5f); //int - float arg
+                t.m1(10.5f, 10); //float - int arg 
+                //t.m1(10,10); //compile time error:- reference to m1 is ambiguous
+                //t.m1(10f,10f); //compile time error:- no suitable method found for m1(float,float)
+            }
+        }
+
+    Case 6:- 
+
+        class Animal {
+            
+        }
+        class Monkey extends Animal{
+
+        }
+
+        class Test {
+            public void m1(Animal a){
+                System.out.println("Animal version");
+            }
+            public void m1(Monkey m){
+                System.out.println("Monkey version");
+            }
+
+            public static void main(String[] args){
+                Test t = new Test();
+
+                Animal a = new Animal();
+                t.m1(a);    //Animal version
+
+                Monkey m = new Monkey();
+                t.m1(m);     //Monkey version
+
+                Animal a1 = new Monkey();
+                t.m1(a1);   //Animal version
+            }
+        }
+
+    NOTE
+    ----
+
+        -> In overloading method resolutin always takes cares by compiler based on reference type.
 
 
