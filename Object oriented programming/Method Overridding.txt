@@ -118,5 +118,22 @@
                 abstract class C extends P {
                     public abstract void m1();
                 }
-                
+
             -> The main advantage of this approach is we can stop availability of parent method implementation in next child classes.
+        
+
+        Summary
+        -------
+
+            -> In overridding following modifiers won't keep any restrictions.
+                1. synchronized
+                2. strictfp
+                3. native
+                4. abstract
+
+            Parent class method     final           non-final       abstract        non-abstract    synchronized        non-synchronized    native          non-native   strictfp          non-strictfp
+
+
+            child class method      non-final       final           non-abstract    abstract        non-synchronized    synchronized        non-native      native       non-strictfp      strictfp
+
+                                    Wrong           Right           Right           Right           Right               Right               Right           Right       Right               Right
