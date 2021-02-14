@@ -177,4 +177,164 @@
             Compile time error :- m1() in C cannot override m1() in P overridden method does not throw java.lang.InterruptedException
 
 
+    Overridding with respect to static method
+    -----------------------------------------
+
+        1. We can't override a static method as non static otherwise we will get compile time error.
+
+            class P {
+                public static void m1(){
+
+                }
+            } 
+            class C extends P {
+                public void m1(){
+
+                }
+            }
+
+            compile time error :- m1() in C cannot override m1() in p; overridden method is static.
+
+        2. We can't override non static method as static.
+
+            class P {
+                public void m1(){
+
+                }
+            } 
+            class C extends P {
+                public static void m1(){
+
+                }
+            }
+            
+            compile time error :- m1() in C cannot override m1() in p; overridding method is static.
+
+        3. If both parent and child class method is then we won't get any compile time error.
+            -> It seems overridding concept is applicable to the static method but it is not overridding it is method hiding.
+
+            class P {
+                public static void m1(){
+
+                }
+            } 
+            class C extends P {
+                public static void m1(){
+
+                }
+            }
+
+        Method hiding
+        -------------
+
+            -> All rules of method hiding is same as method overridding except following differences.
+
+                Method hiding                   overridding
+
+            1. Both parent and child        1. Both parent and child class
+             method should be static.          methods should be non static.
+
+            2. Compiler is responsible      2. JVM is always responsible for 
+             for method resolution based        method resolution based on runtime 
+             on reference type.                 object.
+
+            3. It is also known as          3. It is also known as runtime polymorphism
+            compile time polymorphism           dynamic polymorphism
+            static polymorphism                 late binding.
+            or early binding.
+
+            Example:- 
+
+                class P {
+                    public static void m1(){
+                        System.out.println("parent");
+                    }
+                }
+                class C extends P {
+                    public static void m1(){
+                        System.out.println("Child");
+                    }
+                }
+
+                class Test {
+                    public static void main(String[] args){
+                        P p = new P();
+                        p.m1();         //parent
+
+                        C c = new C();
+                        c.m1();         //child
+
+                        P p1 = new C();
+                        p1.m1();        //parent
+                    }
+                }
+
+            -> If both parent and child class method is non static then it is overridding.
+            -> If both parent and child class method is static then it is method hiding.
+
+    
+    Overridding with respect to var arg methods
+    -------------------------------------------
+        -> We can override var arg method with another var arg method only. If we are trying to override with normal method then it will become overloading but not overridding. 
+
+            class P {
+                public void m1(int... i){
+                    System.out.println("var arg")
+                }
+            }
+            class C extends P {
+                public void m1(int i){
+                    System.out.println("int arg");
+                }
+            }
+            class Test {
+                public static void main(String[] args){
+                    P p = new P();
+                    p.m1(10);       //var arg
+
+                    C c = new C();
+                    c.m1(10);       //int arg
+
+                    P p1 = new C();
+                    p1.m1(10);      // var arg
+                }
+            }
+            
+            -> In above example if we replace child method with var arg method then it will become overridding in this case output is:-
+                var arg
+                int arg
+                int arg
+
+
+    Overridding with respect to  variables
+    --------------------------------------
+
+        -> variable resolution always takes care by compiler based on reference type irrespective of whether the variable is static or non static (Overridding concept applicable only for methods but not for variables).
         
+            class P {
+                int x = 888;
+            }
+            class C extends P {
+                int x = 999;
+            }
+
+            class Test {
+                public static void main(String[] args) {
+                    P p = new P();
+                    System.out.println(p.x);    // 888
+
+                    P p1 = new C();
+                    System.out.println(p1.x);   // 888
+
+                    C c = new C();
+                    System.out.println(c.x);    // 999
+
+                }
+            }
+
+
+
+
+        
+
+            
