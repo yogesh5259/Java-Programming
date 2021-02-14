@@ -1,0 +1,80 @@
+        Method Overridding
+        ==================
+    
+    -> Whatever methods parents have bydefault available to the child through inheritance if child class not satisfied with parent class implementation then child is allowed to redefine that method based on it's requriment this process is overridding.
+
+    -> The parent class method which is overridden is called overridden method.
+
+    -> The child class method which is overridding is called overridding method.
+
+    Example:- 
+
+        class Parent{
+            public void property(){
+                System.out.println("Gold");
+            }
+            public void marry(){
+                System.out.println("Mary");
+            }
+        }
+
+        class Child extends Parent {
+            public void marry(){
+                System.out.println("Priyanka");
+            }
+        }
+    
+        class Test{
+            public static void main(String[] args){
+                Parent p = new Parent();
+                p.marry();      // Mary
+
+                Child c = new Child();
+                c.marry();      //Priyanka
+
+                Parent p1 = new Child();
+                p1.marry();     // Priyanka
+            }
+        } 
+
+    -> In overridding method resolution always takes care by JVM based on runtime object and hence overridding is also considered as runtime polymorphism or dynamic polymorphism or late binding.
+
+    Rules For Overridding
+    ---------------------
+        1. In overridding method names and arguments type must be matched that is method signature must be same.
+
+        2. In overridding return types must be same but this rule is applicable until 1.4 version only. but 1.5 version onwards we can take covarient return types. According to this child class method return type need not be same as parent method return type. It's child type also allowed.
+
+            Example:- 
+
+                class p {
+                    public Object m1(){
+                        return null;
+                    }
+                }
+                class C extends P{
+                    public String m1(){
+                        return null;
+                    }
+                }
+
+            -> Covarient return type concept is applicable only for Object Types but not for primitive types.
+        
+        3. Parent class private methods not available to the child and hence overridding concept not applicable for private methods.
+        
+            -> Based on our requriment we can define exectly same method in child class then it is valid but not overridding.
+
+            Example:- 
+                class P{
+                    private void m1(){
+
+                    }
+                }  
+                class C extends P {
+                    private void m1(){
+
+                    }
+                }
+        
+        4. 
+
