@@ -158,3 +158,23 @@
             Parent class method :- public      protected                default
 
             child class method :- public        public/protected        public/protected/default
+
+
+        8. If child class method throws any checked exception then compolsary parent class method should throws same checked exception or it's parent otherwise we will get compile time error.
+            -> There are no restriction on unchecked exception.
+
+            class P {
+                public void m1() throws IOExceptio{
+
+                }
+            }
+            class C extends P {
+                public void m1() throws EOFException, InterruptedException{
+
+                }
+            }
+
+            Compile time error :- m1() in C cannot override m1() in P overridden method does not throw java.lang.InterruptedException
+
+
+        
