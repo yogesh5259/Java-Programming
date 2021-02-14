@@ -137,3 +137,24 @@
             child class method      non-final       final           non-abstract    abstract        non-synchronized    synchronized        non-native      native       non-strictfp      strictfp
 
                                     Wrong           Right           Right           Right           Right               Right               Right           Right       Right               Right
+
+
+
+        7. While overridding we can't reduce the sope of the modifier but we can increase a scope.
+
+            class C {
+                public void m1(){
+
+                }
+            }
+            class C extends P {
+                void m1(){
+
+                }
+            }
+
+            compile time error :- m1() in c cannot override m1() in p; attempting to assign weaker access privilages; was public.
+
+            Parent class method :- public      protected                default
+
+            child class method :- public        public/protected        public/protected/default
