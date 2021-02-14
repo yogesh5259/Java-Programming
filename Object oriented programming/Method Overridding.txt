@@ -61,7 +61,7 @@
             -> Covarient return type concept is applicable only for Object Types but not for primitive types.
         
         3. Parent class private methods not available to the child and hence overridding concept not applicable for private methods.
-        
+
             -> Based on our requriment we can define exectly same method in child class then it is valid but not overridding.
 
             Example:- 
@@ -76,5 +76,47 @@
                     }
                 }
         
-        4. 
+        4. We can't override parent class final methods in child classes if we are trying to override we will get compile time error.
 
+            Example:-
+
+                class P {
+                    public final void m1(){
+
+                    }
+                }
+                class C extends P {
+                    public void m1(){
+
+                    }
+                }
+                
+            -> m1() in C cannot override m1() in p; overridden method is final.
+
+        5. Parent class abstract methods we should override in child class to provide implementation.
+
+            Example :-
+
+                abstract class P {
+                    public abstract void m1();
+                }
+                class C extends P {
+                    public void m1(){
+
+                    }
+                }
+
+        6. We can override non abstract method as abstract.
+
+            Example:-
+
+                class P {
+                    public void m1(){
+
+                    }
+                }
+                abstract class C extends P {
+                    public abstract void m1();
+                }
+                
+            -> The main advantage of this approach is we can stop availability of parent method implementation in next child classes.
