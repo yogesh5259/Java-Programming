@@ -1,0 +1,16 @@
+            Polymorphism
+            ============
+
+    -> The word “poly” means many and “morphs” means forms, So it means many forms.
+    -> In java there are two types of Polymorphism.
+    
+    1. Runtime Polymorphism.
+    2. compile time Polymorphism.
+    
+    1. Runtime Polymorphism.
+        -> overriding
+
+    2. compile time Polymorphism.
+        -> overloading
+    
+    
