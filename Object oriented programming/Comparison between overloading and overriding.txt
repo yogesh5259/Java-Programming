@@ -1,0 +1,25 @@
+        Comparison between overloading and overriding
+        ---------------------------------------------
+    
+         property                                    overloading                               overriding
+
+    1. method name                                  must be same                            must be same
+
+    2. argument type                                must be different                       must be same
+
+    3. final, private, static method                no restrictions                         cannot be overriden
+
+    4. Return type                                  no restrictions                         covarient return type is allowed 
+
+    5. throws clause                                no restrictions                         if child class method throws any checked 
+                                                                                            exception compulsary parent class method 
+                                                                                            should throw same checked exception 
+                                                                                            or it's parent.
+
+    6. method resolution                            compiler based on reference type        JVM based on runtime object.
+
+    7. other names                                  compile time polymorphism               Runtime polymorphism
+                                                    early binding                           late binding
+                                                    static polymorphism                     dynamic polymorphism
+
+                                    
