@@ -20,4 +20,6 @@
 
         -> The underlying original object type 'd' must be either same or derived type of 'C', otherwise we will get runtime Exception: classCastException.
 
-        
+    -> through type casting we are not creating any new object.
+    -> For the exesting object we are providing another type of reference variable that we are performing type casting not an  object casting.
+    
