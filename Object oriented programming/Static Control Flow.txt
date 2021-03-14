@@ -1,0 +1,42 @@
+            Static control flow 
+            ===================
+    
+    -> When ever we are executing a java class the following sequence of steps will be executed as the part of static control flow.
+
+        1. Identification of static member from top to bottom.
+        2. Execution of static variable assignment and static block from top to bottom.
+        3. Execution of main method.
+
+    Example
+    -------
+
+        class Base{
+            static int i = 10;
+            static{
+                m1();
+                System.out.println("First Static Block");
+            }
+            public static void main(String[] args){
+                m1();
+                System.out.println("Main Method");
+            }
+            public static void m1(){
+                System.out.println(j);
+            }
+            static{
+                System.out.println("Second Static Block");
+            }
+            static int j = 20;
+
+        }
+
+
+        Output:-
+        -------
+            0
+            First Static Block
+            Second Static Block
+            20
+            Main Method
+
+    -> If we try to read and display the value of a variable inside the static block, that read operation is called a direct read. If we are calling a method from a static block, and within that method, if we are trying to read a variable, that read operation is called an indirect read.
