@@ -174,3 +174,6 @@
             200
             Derived main
 
+    -> Whenever we are loding child class automatic parent class will be loaded.
+    -> Whenever parent class loading then child class won't be loaded automaticly.
+
