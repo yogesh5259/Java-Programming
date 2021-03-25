@@ -40,3 +40,137 @@
             Main Method
 
     -> If we try to read and display the value of a variable inside the static block, that read operation is called a direct read. If we are calling a method from a static block, and within that method, if we are trying to read a variable, that read operation is called an indirect read.
+
+
+    USE of static block
+    -------------------
+
+
+        -> Static blocks will be executed at the time of class loading hence at the time of the class loading if we want to perform any activity we have to define that inside static block.
+
+        Example 1:- 
+
+            -> At the time of java class loading the corresponding native library should be loaded hence we have to define this activity inside static block.
+
+            class Test{
+                static
+                {
+                    System.loadLibrary("Path");
+                }
+            }
+    
+        Example 2:-
+
+            -> After loading every database driver class we have to register driver class with the drivermanager but inside database driver class there is static block to perform this activity and we are not responsible to register explicitly.
+
+            class DBDriver{
+                static{
+                    register This driver 
+                    with drivermanager.
+                }
+            }
+        -> With in a class we can declare any number of static blocks but all this static blocks executed from top to bottom.
+
+        1. Without writing main method is it possible to print some statement to the consol?
+        -> yes, By using static block.
+
+            class Test {
+                static{
+                    System.out.println("I am static block");
+                    System.exit(0);
+                }
+            } 
+
+            Output:- 
+                I am static block
+            
+        2. Without writing main method and static block is it possible to print some statement to the consol?
+        -> Yes
+
+            class Test{
+                static int i = m1();
+                public static void m1(){
+                    System.out.println("Hello I can print");
+                    System.exit(0);
+                }
+            }
+            Output:- 
+                Hello I can print
+
+
+            class Test{
+                Test t = new Test();
+                {
+                    System.out.println("Hello I can Print");
+                    System.exit(0);
+                }
+            }
+
+            Output:-
+                Hello I can Print
+
+            
+            class Test{
+                Test t = new Test();
+                Test(){
+                    System.out.println("Hello I can...");
+                    System.exit(0);
+                }
+            }
+            Output:-
+                Hello I can...
+            
+
+    
+            Static control flow in parent to child Relationship
+            ===================================================
+
+        Example:- 
+
+        class Base{
+            static int i = 10;
+            static{
+                m1();
+                System.out.println("Base static one");
+            }
+            public static void main(String[] args){
+                m1();
+                System.out.println("Base main");
+            }
+            public static void m1(){
+                System.out.println(j);
+            }
+            static int j = 20;
+        }
+
+        class Derived extends Base{
+            static int x = 100;
+            static{
+                m2();
+                System.out.println("Derived static one");
+            }
+            public static void main(String[] args){
+                m2();
+                System.out.println("Derived main");
+            }
+            public static void m2(){
+                System.out.println(y);
+            }
+            static {
+                System.out.println("Derived second static");
+            }
+            static int y = 200;
+        }
+
+        -> java Derived.java
+
+        output:-
+
+            0
+            Base static one
+            0
+            Derived static one
+            Derived second static
+            200
+            Derived main
+
