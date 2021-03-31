@@ -1,0 +1,43 @@
+            Instance Control Flow
+            =====================
+    
+    -> Whenever we are executing a java class first static control flow will be executed.
+    -> In the static control flow if we are creating an object the following sequence of events will be executed as a part of instance control flow.
+        1. Identification of instance member from top to bottom.
+        2. execution of instance variable assignments and instance blocks from top to bottom.
+        3. execution of constructor.
+
+    Example :-
+
+        class Test{
+            int i = 10;
+            {
+                m1();
+                System.out.println("First Instance");
+            }
+
+            Test(){
+                System.out.println("Constructor");
+            }
+            public static void main(String[] args){
+                Test obj = new Test();
+                System.out.println("Main Method");
+            }
+            public void m1(){
+                System.out.println(j);
+            }
+            {
+                System.out.println("Second Instance");
+            }
+            int j = 20;
+        }
+
+        output:- 
+            0
+            First Instance
+            Second Instance
+            Constructor
+            Main Method
+
+        
+
