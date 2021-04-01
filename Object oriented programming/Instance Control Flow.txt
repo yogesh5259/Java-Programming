@@ -39,5 +39,79 @@
             Constructor
             Main Method
 
+    NOTE
+    ----
+        -> Static control flow is one time activity which will be performed at the time of class loading.
+        -> Instance control flow is not one time activity it will be performed for every object creation.
+        -> object creation is costly operation if there is no requirement then recommended not to create.
+
+    
+            Instance control flow in Parent to child replationship
+            ======================================================
+
+    -> Whenever we are creating child object then the following sequence of events will be performed as a part of Instance control flow.
+        1. Identification of Instance members from parent to child.
+        2. Execution of instance variable assignments and instance blocks only in parent class.
+        3. Execution of parent constructor.
+        4. Execution of instance variable assignments and Instance blocks in child class.
+        5. Execution of child constructor.
+
+
+    Example:- 
+
+        class Parent {
+            int i = 10;
+            {
+                m1();
+                System.out.println("Parent Instance Block");
+            }
+            Parent(){
+                System.out.println("Parent Constructor");
+            }
+            public static void main(String[] args){
+                Parent p = new Parent();
+                System.out.println("Parent main");
+            }
+            public void m1(){
+                System.out.println(j);
+            }
+            int j = 20;
+        }
+
+        class Child extends Parent{
+            int x = 100;
+            {
+                m2();
+                System.out.println("Child first instance block");
+            }
+            Child(){
+                System.out.println("child Constructor");
+            }
+            public static void main(String[] args){
+                Child  c = new Child();
+                System.out.println("Child Main");
+            }
+            public static void m2(){
+                System.out.println(j);
+            }
+            {
+                System.out.println("Child Second Instance Block");
+            }
+            int j = 200;
+        }
+
+        java Child
+
+        output:- 
+            0
+            Parent Instance Block
+            Parent Constructor
+            0
+            Child first instance block
+            Child Second Instance Block
+            child Constructor
+            Child Main
+
+            
         
 
