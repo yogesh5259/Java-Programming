@@ -1,0 +1,24 @@
+
+        Number of ways to get object in java 
+        ====================================
+
+    1. By using 'new' operator
+        Test t = new Test();
+
+    2. By using 'newInstance()' method
+        Test t = (Test) Class.forName("Test").newInstance();
+    
+    3. By using 'factory' method
+        RunTime r = RunTime.getRunTime();
+        DateFormat df = DateFormat.getInstance();
+   
+    4. By using 'clone()' method 
+
+        Test t = new Test();
+        Test t2 = (Test)t.clone();
+
+    5. By using 'Deserialization'
+
+        FileInputstream fs = new FileInputstream('abc.scr');
+        ObjectInputStream os = new ObjectInputStream(fs);
+        Dog d2 = (Dog) os.readObject();
