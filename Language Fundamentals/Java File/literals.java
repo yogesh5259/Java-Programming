@@ -24,7 +24,7 @@ public class literals {
         
 
         float f = 2147483647;  // assign int to float
-        float f1 = 'a'; // Assign char to float, int, double, long
+        float f1 = 'a'; // we can assign char to float, int, double, long
         System.out.println(f + " ..." + f1);
 
 
