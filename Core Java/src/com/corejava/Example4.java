@@ -70,7 +70,11 @@ public class Example4 {
         double d5 = 0101;// octal to int and then to double
         System.out.println(d1 + " " + d2 + " " + d3 + " " + d4 + " " + d5);
 
-
+        //assign to boolean
+        // only two literals also it is case sensitive
+        boolean bo = true;
+        boolean bo1 = false;
+        System.out.println(bo + " " + bo1);
 
     }
 }
