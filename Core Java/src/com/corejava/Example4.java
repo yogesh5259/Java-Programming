@@ -2,7 +2,8 @@ package com.corejava;
 
 
 /**
- *Created by Yogesh Patel on 20/04/2021
+ *Created by Yogesh Patel on 21/04/2021
+ *
  *Refer Language Fundamentals -> java File -> literals.java
  *
  * Assignment of literal value to the datatype
@@ -44,6 +45,32 @@ public class Example4 {
         char c2 = 'c'; // char
         char c3 = '\u0061'; //unicode
         System.out.println(c + " " + c1 + " " + c2 + " " + c3);
+
+        //assign literal to long
+        //any small data type char, int, byte, short in any form
+        long l1 = 2147483648L; // (l / L)  //default treated as int so we need to add L at the end.
+        long l2 = 10;
+        System.out.println(l1 + " " + l2);
+
+
+        //assign literal to float
+        //any small data type char, int, byte, short, long in any form
+        float f = 10;
+        float f1 = 10F; //(f / F)
+        float f2 = 010.50F; // by default floating point is treated as double so we need to add f at the end.
+        System.out.println(f + " " + f1 + " " + f2);
+
+
+        //assign literal to double
+        //any small data type char, int, byte, short, long, float in any form
+        double d1 = 10; // any form of int
+        double d2 = 100D; //(d/D) optional by default floating point number is double
+        double d3 = 1010.10; // by default floating point is treated as double so we need to add f at the end.
+        double d4 = 01010.101; // treated as floating point as it is not octal
+        double d5 = 0101;// octal to int and then to double
+        System.out.println(d1 + " " + d2 + " " + d3 + " " + d4 + " " + d5);
+
+
 
     }
 }
