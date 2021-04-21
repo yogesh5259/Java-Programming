@@ -20,12 +20,6 @@ public class Example3 {
         boolean b1 = true;      //depends on virtual machine (JVM)
 
 
-        // data type assignment
-        byte b2 = 127; //decimal value
-        byte b3 = 012; //octal value // 8^1 * 1 + 8^0 * 2  = 10
-        byte b4 = 0x1A; //hex value
-        byte b5 = 0b110;
-        System.out.println(b2 + " " + b3 + " " + b4 + " " + b5);
 
     }
 }
